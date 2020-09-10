@@ -133,9 +133,8 @@ $(function() {
 
 	// высчитывает итоговую суму оплаты по списку чекбоксов, сума высчитываеться с поля input[ckeckbox]="value" 
 
-	let productPriceFirstPart = parseInt( $('#purchase .buy-form #product-price .product-price-first-part').text() );
-	let productPriceSecondPart = parseInt( $('#purchase .buy-form #product-price .product-price-second-part').text() );
-	let productPrice = parseInt( productPriceFirstPart.toString() + productPriceSecondPart.toString() );
+
+	let productPrice = $('#purchase .buy-form #product-price').data('price');
 
 
 	$('#accessories-select-list').click(function() {
@@ -146,11 +145,10 @@ $(function() {
 		$('#accessories-select-list input[type=checkbox]').each(function () {
 	
 			if ( $(this).is(':checked') ) {
-				totalPriceChecked = totalPriceChecked + parseInt($(this).val());				
+				totalPriceChecked = totalPriceChecked + parseInt($(this).data('price'));				
 			}			
 	
 		});
-
 
 		let totalPrice = totalPriceChecked + productPrice;
 
@@ -158,8 +156,8 @@ $(function() {
 		let secondPricePart = totalPrice.toString().slice(-3);
 
 	
-		$('#purchase .buy-form #product-price .product-price-first-part').text(firstPricePart);
-		$('#purchase .buy-form #product-price .product-price-second-part').text(secondPricePart);
+		$('#purchase .buy-form #product-price').text(firstPricePart + ' ' + secondPricePart);
+		
 		
 
 
