@@ -1,0 +1,2147 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+* 
+	-webkit-tap-highlight-color: transparent	
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	background-color: #F8F8F8
+	padding: 0
+	margin: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+::selection
+	background-color: orange
+	color: #fff
+
+a, a:hover 
+	text-decoration: none
+
+a:focus 
+	outline: 0px solid transparent	
+
+p 
+	margin: 0		
+
+ul 
+	margin: 0
+	padding: 0
+	list-style: none
+
+.main-wrapper
+	max-width: 1600px
+	margin: 0 auto
+
+/*       Header             */
+
+.main-header-wrapper	
+	background: url(../img/header-background.jpg) no-repeat center
+	background-size: cover
+	position: relative
+
+header.main-header
+	max-width: 1600px
+	margin: 0 auto
+	min-height: 100vh
+	box-sizing: border-box
+	color: #FFFFFF
+	font-family: Gilroy
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+	padding-top: 130px
+	padding-bottom: 130px
+
+	.main-nav-wrapper
+		background-color: transparent
+		position: fixed
+		top: 0
+		left: 0
+		margin: 0 auto
+		width: 100%
+		z-index: 10
+		transition: 0.6s
+	
+	.main-nav
+		margin: 0 auto
+		width: 100%
+		box-sizing: border-box
+		max-width: 1600px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 95px
+		min-height: 106px
+		z-index: 10
+		transition: 0.6s
+		position: relative
+
+		.logo
+			display: block
+			background: url(../img/logo.svg) no-repeat center
+			background-size: cover
+			width: 126px
+			height: 16px
+			transition: 0.6s
+
+		.logo:hover
+			opacity: 0.7	
+
+		.links-nav
+	
+			li 
+				display: inline-block
+				margin-right: 24px
+
+				a 
+					display: inline-block
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 16px
+					color: #fff
+					letter-spacing: 0.05em
+					text-transform: uppercase
+					padding-bottom: 4px
+					transition: 0.6s
+
+				a:before 
+					content: ""
+					display: block
+					background-color: #ffffff
+					height: 4px
+					position: relative
+					bottom: 41px
+					transition: 0.6s
+					opacity: 0
+
+				a:hover:before	
+					display: block
+					opacity: 1
+
+			
+			li:last-child
+				margin-right: 0
+
+		.telefone
+			position: relative
+
+			a
+				display: block
+				padding-left: 60px
+				position: relative
+				font-style: normal
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				transition: 0.6s
+				color: #FFFFFF
+
+		.telefone
+
+			a:before	
+				content: ""
+				display: block
+				width: 40px
+				height: 40px
+				background: url(../img/telefone-icon.svg) no-repeat center
+				background-size: cover
+				position: absolute
+				left: 4px
+				bottom: -8px
+
+		.links-nav-mobile
+			display: none
+			
+			.hamburger-icon-container 
+				position: relative
+				cursor: pointer
+				width: 32px
+				height: 16px
+			
+			.hamburger-icon 
+				transform: translateY(-50%)
+			
+			.hamburger-icon,
+			.hamburger-icon:before,
+			.hamburger-icon:after 
+				content: ''
+				position: absolute
+				height: 3px
+				width: 100%
+				background: #fff
+				transition: all .2s ease
+
+			.hamburger-icon:after 
+				width: 50%				
+			
+			.hamburger-icon 
+				top: 50%
+			
+
+			.hamburger-icon:before 
+				top: -200%
+			
+			.hamburger-icon:after 
+				top: 200%			
+
+			.hamburger-active .hamburger-icon 
+				transform: rotate(45deg) translate(-3px,-3px)			
+
+			.hamburger-active .hamburger-icon:before,
+			.hamburger-active .hamburger-icon:after 
+				top: 0
+			
+			.hamburger-active .hamburger-icon:before 
+				transform: rotate(90deg)
+			
+
+	.main-nav-wrapper.scroll-nav
+		background-color: #fff
+
+		.main-nav
+			background-color: #fff
+			min-height: 62px
+
+			.logo
+				background: url(../img/logo-fixed.svg) no-repeat center
+			
+			.links-nav
+		
+				li 
+
+					a 
+						color: #101326
+
+					a:before 
+						background-color: #101326	
+						bottom: 19px
+
+			.telefone
+
+				a
+					color: #101326
+
+			.telefone
+
+				a:before		
+					background: url(../img/telefone-icon-fixed.svg) no-repeat center
+
+			.links-nav-mobile		
+				
+				.hamburger-icon,
+				.hamburger-icon:before,
+				.hamburger-icon:after 
+					background: #000
+
+	
+
+	.title	
+
+		.title-logo
+			font-weight: 600
+			font-size: 72px
+			line-height: 96px
+			background: url(../img/title-logo-background.svg) no-repeat center
+			min-height: 96px
+			max-width: 288px
+			box-sizing: border-box
+			padding-left: 19px
+			margin: 0 auto
+
+		.title-about
+			font-family: TacticSansExd-Med
+			font-weight: normal
+			font-size: 14px
+			line-height: 16px
+			text-align: center
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #B19459
+			position: relative
+			max-width: 330px
+			margin: 0 auto
+			padding-top: 32px
+
+		.title-about:before
+			content: ""
+			display: block
+			width: 12px
+			height: 12px
+			background-color: #B19459
+			transform: rotate(45deg)	
+			position: absolute
+			left: 50%
+			top: 112px
+			margin-left: -6px
+
+		.adout-product 
+			font-style: normal
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			text-align: center
+			max-width: 928px
+			margin: 0 auto
+			padding-top: 108px
+
+	.icon-links
+		position: absolute
+		bottom: 0
+		width: 100%
+		padding: 0 100px
+		padding-bottom: 51px
+		display: flex
+		justify-content: space-between
+
+		.buy-link
+			display: block
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #FFFFFF
+			position: relative
+			padding-left: 46px
+			transition: 0.6s
+
+		.buy-link:hover
+			opacity: 0.7
+
+		.buy-link:before
+			content: ""
+			display: block	
+			position: absolute
+			background: url(../img/buy-icon.svg) no-repeat center
+			background-size: cover
+			height: 24px
+			width: 24px
+			left: 0px
+			top: -4px
+
+		.arrow-link	
+			display: block
+			background: url(../img/arrow-link.svg) no-repeat center
+			background-size: cover
+			height: 32px
+			width: 20px
+			position: relative
+			bottom: 12px
+			transition: 0.6s
+
+		.arrow-link:hover
+			opacity: 0.7
+
+		.video-link	
+			display: block
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #FFFFFF
+			position: relative
+			padding-right: 45px
+			transition: 0.6s
+
+		.video-link:hover
+			opacity: 0.7
+
+		.video-link:before
+			content: ""
+			display: block	
+			position: absolute
+			background: url(../img/video-icon.svg) no-repeat center
+			background-size: cover
+			height: 26px
+			width: 20px
+			right: 0
+			top: -7px
+		
+		
+/*       Product             */
+
+.product-image	
+	display: block
+	width: 100%	
+
+.product 
+	min-height: 100vh
+	color: #FFFFFF
+	position: relative	
+	display: flex
+
+	.about-product
+		background: url(../img/about-product-background.jpg) no-repeat center
+		background-size: cover
+		max-width: 568px
+		min-height: 384px
+		box-sizing: border-box
+		border-radius: 16px
+		padding: 45px 48px 45px 48px
+		position: absolute 
+		top: 128px
+		right: 96px
+
+		h3 
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 30px
+			line-height: 32px
+			text-transform: uppercase
+			margin: 0
+			margin-bottom: 30px
+
+		p 
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 18px
+			line-height: 24px
+			margin-top: -5px
+
+.product-image-background
+	display: block	
+	width: 71.5%
+
+
+.product-2
+	justify-content: flex-end
+
+	.about-product	
+		left: 96px
+
+	
+
+
+/*       Options             */
+
+.options
+	padding-top: 93px
+	padding-bottom: 82px
+
+	h2
+		font-family: TacticSansExd-Med
+		font-style: normal
+		font-weight: normal
+		font-size: 40px
+		line-height: 40px
+		text-align: center
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #101326
+		margin-bottom: 30px
+
+	.about-options
+		font-family: Gilroy
+		font-style: normal
+		font-weight: 500
+		font-size: 18px
+		line-height: 24px
+		text-align: center
+		color: #101326
+		max-width: 448px
+		margin: 0 auto
+
+	.options-list
+		display: flex
+		flex-wrap: wrap	
+		justify-content: center
+		max-width: 1000px
+		margin: 0 auto
+		padding-top: 64px
+
+		li 
+			max-width: 208px
+			text-align: center
+			margin: 0 15px
+			padding-bottom: 47px
+			transition: 0.6s
+			position: relative
+
+			img 
+				display: inline-block
+				width: 176px
+				height: 176px
+
+			.option-title 
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				color: #101326
+				padding-top: 14px
+				padding-bottom: 10px
+			
+			.about-option
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 500
+				font-size: 13px
+				line-height: 16px
+				color: #898B97
+	
+		li:hover
+			transform: scale(1.1)
+
+/*       accessories             */	
+
+.accessories-wrap	
+	background-color: #EFEEEE	
+
+.accessories
+	padding-left: 96px
+	padding-top: 90px
+	padding-bottom: 132px
+	position: relative
+	max-width: 1600px
+	margin: 0 auto
+	
+	h3 
+		font-family: TacticSansExd-Med
+		font-style: normal
+		font-weight: normal
+		font-size: 40px
+		line-height: 40px
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #101326
+		padding-bottom: 23px
+
+	.custom-slick-arrows 
+		position: absolute 
+		top: 112px
+		right: 96px
+		font-size: 0px
+
+		.custom-slick-prev, .custom-slick-next
+			display: inline-block
+			cursor: pointer
+			width: 72px
+			height: 72px
+			background-color: #ffffff
+			border-radius: 50%
+			transition: 0.6s
+
+			.wrapper
+				height: 100%
+				background: url(../img/slick-arrow.svg) no-repeat center
+
+			img 
+				display: inline-block
+				align: center
+
+		.custom-slick-next 
+			transform: rotate(180deg)
+			margin-left: 8px
+
+		.custom-slick-prev:hover, .custom-slick-next:hover
+			opacity: 0.6
+						
+
+	.accessories-slider 
+
+		.accessories-item
+			position: relative
+			margin-right: 32px
+
+			a 
+				display: block
+				transition: 0.6s
+				position: relative
+
+			a:hover 
+				opacity: 1
+
+			a:focus 
+				outline: 0px solid transparent	
+
+			a.accessories-item-logo:before
+				content: ""
+				display: block
+				position: absolute
+				background: url(../img/accessories-item-logo.svg) no-repeat center
+				background-size: cover
+				width: 72px
+				height: 72px
+				top: 16px
+				right: 16px
+				transition: 0s	
+
+			img 
+				display: block
+				border-radius: 16px
+				max-width: 448px
+
+			.accessory-name 
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 500
+				font-size: 18px
+				line-height: 24px
+				color: #101326
+				margin-top: 16px
+				margin-bottom: 3px
+
+			.accessory-price
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 36px
+				line-height: 40px
+				color: #101326
+
+		
+		.accessories-item:focus 
+			outline: 0px
+
+
+/*       Mobile application            */	
+
+.mobile-application-wrapper		
+	background: url(../img/mobile-application-background.jpg) no-repeat center
+	background-size: cover	
+
+.mobile-application
+	max-width: 1600px
+	margin: 0 auto
+	min-height: 640px	
+	color: #FFFFFF
+	position: relative
+
+	.description
+		max-width: 448px
+		margin-left: 216px
+		position: relative
+
+		h3	
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			margin: 0
+			padding-top: 129px
+			padding-bottom: 32px
+
+		p	
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 18px
+			line-height: 24px
+
+		.download-aplication 
+			display: inline-block
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 14px
+			text-align: center
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #FFFFFF
+			position: relative
+			border: 1px solid #FFFFFF
+			border-radius: 8px
+			padding-left: 63px
+			padding-right: 23px
+			padding-top: 23px
+			padding-bottom: 23px
+			margin-top: 90px
+			transition: 0.6s
+
+		.download-aplication:hover
+			opacity: 0.6	
+
+
+		.download-aplication:before
+			content: ""
+			display: block
+			position: absolute
+			background: url(../img/download-aplication.svg) no-repeat center
+			background-size: cover
+			width: 20px
+			height: 24px
+			left: 25px
+			bottom: 21px
+
+	.description:before
+		content: ""
+		display: block
+		position: absolute
+		background: url(../img/mobile-logo.svg) no-repeat center
+		background-size: cover
+		height: 126px
+		width: 16px
+		top: 128px
+		left: -121px
+
+	.mobile-application-background-2-tablet
+		display: none	
+
+.mobile-application:before
+	content: ""
+	display: block
+	position: absolute
+	background: url(../img/mobile-application-background-2.png) no-repeat center
+	background-size: cover
+	height: 704px
+	width: 566px
+	top: -64px
+	right: 216px
+
+
+/*       About application           */	
+
+.about-application-wrapper
+	background-color: #101326		
+
+.about-application
+	max-width: 1600px
+	margin: 0 auto	
+	padding-bottom: 264px
+	position: relative
+
+	.about-application-slider 
+
+		.item 
+			text-align: center
+			padding-top: 128px
+
+			img 
+				display: inline-block
+
+			.about-application-item-image	
+				width: 120px
+				height: 120px
+
+			.application-description
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 500
+				font-size: 26px
+				line-height: 32px
+				color: #FFFFFF
+				max-width: 928px
+				margin: 0 auto
+				padding-top: 33px
+				padding-bottom: 56px
+				position: relative
+
+			.application-description:after
+				content: ""
+				display: block
+				position: absolute
+				background: #fff
+				height: 10px
+				width: 10px
+				bottom: 11px
+				left: 50%
+				margin-left: -5px
+				transform: rotate(45deg)
+
+
+			.name
+				font-family: TacticSansExd-Med
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 16px
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				color: #FFFFFF
+				margin-bottom: 15px
+
+			.about-person
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 500
+				font-size: 14px
+				line-height: 20px
+				color: #363A53
+				max-width: 448px
+				margin: 0 auto
+
+		.item:focus 
+			outline: 0px
+
+		.slick-dots
+			max-width: 449px
+			left: 50%
+			bottom: -156px
+			transform: translateX(-50%)
+			background-color: #363A53
+			display: flex
+			flex-direction: row
+			justify-content: center
+			height: 2px
+			position: relative			
+
+			li 
+				flex-grow: 1
+				margin: 0
+				height: 2px
+
+				button
+					height: 2px
+					padding: 0
+					transition: 0.6s
+					width: 100%
+					height: 2px
+
+			.slick-active
+				height: 2px
+				background-color: #fff
+				color: #fff
+				transition: 0.6s
+
+				button
+					background-color: #fff
+					color: #fff
+					height: 2px
+					padding: 0
+					transition: 0.6s
+					width: 100%
+					height: 2px
+
+				button:before 
+					font-size: 0
+					height: 0	
+
+
+	.arrows 
+		font-size: 0px
+
+		.about-application-custom-slick-prev, .about-application-custom-slick-next
+			display: inline-block
+			cursor: pointer
+			width: 72px
+			height: 72px
+			border: 1px solid #363A53
+			border-radius: 50%
+			background: url(../img/about-application-arrow.svg) no-repeat center;
+			position: absolute
+			bottom: 103px	
+			transition: 0.6s		
+
+		.about-application-custom-slick-prev
+			left: 20.9%	
+
+		.about-application-custom-slick-next
+			transform: rotate(180deg)
+			right: 20.9%
+
+		.about-application-custom-slick-prev:hover, .about-application-custom-slick-next:hover
+			opacity: 0.6
+
+/*       address          */
+
+.address-background	
+	background-color: #101326			
+
+.address-wrapper
+	max-width: 1600px
+	margin: 0 auto
+
+	.address	
+		position: relative	
+		min-height: 624px
+		background: url(../img/address-background.jpg) no-repeat left center 
+		background-size: 71.5% 100%
+
+		.about-address
+			background-color: #363A53
+			width: 448px
+			box-sizing: border-box
+			min-height: 384px
+			box-sizing: border-box
+			border-radius: 16px
+			padding: 45px 48px 45px 48px
+			position: absolute 
+			top: 128px
+			right: 96px
+
+			h3	
+				font-family: TacticSansExd-Med
+				font-style: normal
+				font-weight: normal
+				font-size: 30px
+				line-height: 32px
+				text-transform: uppercase
+				color: #FFFFFF
+				margin: 0
+				padding-top: 2px
+				padding-bottom: 22px
+
+			p	
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 500
+				font-size: 18px
+				line-height: 24px
+				color: #FFFFFF
+
+			.map-button
+				display: inline-block
+				font-family: TacticSansExd-Med
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 16px
+				text-align: center
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				color: #FFFFFF
+				border: 1px solid #FFFFFF
+				border-radius: 4px
+				padding: 16px 20px
+				margin-top: 48px
+				box-sizing: border-box
+				width: 352px
+				transition: 0.6s
+
+			.map-button:hover
+				opacity: 0.6	
+
+			.map-button.map-button-mobile	
+				display: none
+
+
+/*       purchase          */	
+
+.purchase-wrapper	
+	background-color: #EFEEEE
+
+.purchase		
+	max-width: 1600px
+	margin: 0 auto
+	display: flex
+	justify-content: flex-end
+	padding-left: 96px
+	padding-right: 96px
+	padding-top: 106px
+	padding-bottom: 128px
+	position: relative
+
+	.buy-form	
+		background-color: #363A53
+		border-radius: 16px;
+		width: 568px
+		box-sizing: border-box
+		padding: 0 48px
+		overflow: hidden
+		padding-bottom: 48px
+		position: absolute
+		top: 127px
+		left: 96px
+		transition: 0.2s
+
+		h3	
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #FFFFFF
+			margin: 0
+			padding-top: 47px
+			padding-bottom: 30px
+
+		p 
+
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 18px
+			line-height: 24px
+			color: #FFFFFF
+
+		.price
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 72px
+			line-height: 72px
+			color: #FFFFFF
+			padding-top: 30px
+			padding-bottom: 21px
+
+		.order
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 18px
+			line-height: 24px
+			color: #FFFFFF
+			cursor: pointer
+			position: relative
+			padding-left: 48px
+
+			label 
+				cursor: pointer
+
+			label:before
+				content: ""
+				display: block
+				position: absolute
+				background: #fff
+				background-size: cover
+				height: 32px
+				width: 32px
+				top: -4px
+				left: 0px	
+				border-radius: 8px
+
+			#buy-form-order-check:checked + label:before	
+				background: url(../img/buy-form-order-check.svg) no-repeat center
+
+		.checkout-order
+			display: block
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 16px
+			text-align: center
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #FFFFFF
+			min-width: 472px
+			box-sizing: border-box
+			padding: 24px 20px
+			border: 1px solid #FFFFFF
+			border-radius: 4px
+			margin: 0 auto
+
+		hr 
+			height: 0
+			border-bottom: 1px solid #5E6175
+			width: 160%
+			transform: translateX(-30%)
+			margin-top: 53px
+			margin-bottom: 47px
+
+	.parameter
+		min-width: 688px
+		margin-left: 100px
+
+		h5 
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			color: #101326
+			margin-bottom: 32px
+
+		.parameter-colors
+			margin-bottom: 45px
+			position: relative
+			border-top: 1px solid #CCD4E0
+			border-bottom: 1px solid #CCD4E0
+
+			.select-image
+				position: absolute 
+				top: 50% 
+				left: 0
+				z-index: 400
+				transform: translateY(-50%)
+				cursor: pointer
+
+				.modelImg
+					display: none
+					width: 64px
+					height: 64px
+
+					img 
+						width: 64px
+						height: 64px
+						border-radius: 50%
+						display: inline-block
+
+				.modelImg.visible	
+					display: block	
+
+
+			.selectric-wrapper
+				padding-left: 80px			
+
+				.selectric
+					max-width: 688px
+					box-sizing: border-box
+					padding-top: 15px
+					padding-bottom: 15px
+					border: 0px solid #ddd					
+					background-color: #EFEEEE
+					font-size: 0px
+
+					span.label
+						min-height: 64px
+						display: inline-block
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 500
+						font-size: 18px
+						line-height: 64px
+						color: #101326
+						margin-left: 0
+						position: relative
+						padding-right: 60px					
+
+					b.button 
+						position: relative
+						position: absolute
+						visibility: hidden
+
+					b.button:after
+						content: ""
+						display: block
+						position: absolute
+						background: url(../img/parameter-colors-select-arrow.png) no-repeat center
+						background-size: cover
+						height: 32px
+						width: 32px
+						top: 50%
+						right: -6px	
+						transform: translateY(50%)
+						visibility: visible 
+						border: 0px solid transparent
+						transition: 0.6s
+
+				.selectric-items
+
+					ul 
+						li 
+							font-family: Gilroy
+							font-style: normal
+							font-weight: 500
+							font-size: 18px
+							line-height: 24px
+							color: #101326
+
+			.selectric-wrapper.selectric-open	
+
+				.selectric	
+
+					b.button:after	
+						transform: translateY(50%) rotate(180deg)
+
+		.accessories-select
+
+			li 
+				border-bottom: 1px solid #CCD4E0
+				box-sizing: border-box
+				padding: 27px 0				
+
+				label
+					display: flex
+					justify-content: space-between
+					cursor: pointer
+					position: relative					
+
+					.item-name
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 500
+						font-size: 18px
+						line-height: 24px
+						color: #101326
+						display: inline-block
+						position: relative
+						padding-left: 78px
+
+						.accessories-item-image
+							display: block
+							width: 64px
+							hegiht: 48px
+							border-radius: 4px
+							position: absolute
+							top: 50%
+							left: 0
+							transform: translateY(-50%)
+
+
+
+					.item-price
+						display: inline-block
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 18px
+						line-height: 24px
+						color: #101326
+						padding-right: 90px
+
+						.accessory-price-span 
+							font-family: Gilroy
+							font-style: normal
+							font-weight: 600
+							font-size: 18px
+							line-height: 24px
+							color: #101326
+							display: inline-block	
+
+					.check
+						display: block
+						position: absolute
+						background: url(../img/accessories-item-check.svg) no-repeat center
+						background-size: cover
+						height: 32px
+						width: 32px
+						top: 50%
+						right: 0px	
+						transform: translateY(-50%)
+						border-radius: 4px
+						transition: 0.2s		
+							
+		
+				
+
+
+				.accessories-checbox:checked + label 
+
+					.check
+						background: url(../img/accessories-item-checked.svg) no-repeat center
+
+			li:first-child
+				border-top: 1px solid #CCD4E0		
+
+			
+
+/*       Footer          */	
+
+.footer-wrapper
+	background-color: #EFEEEE
+	border-top: 1px solid #CCD4E0
+
+
+footer 
+	max-width: 1600px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between		
+	padding-top: 115px
+	padding-bottom: 123px
+	padding-left: 96px
+	padding-right: 96px
+	position: relative
+
+	.logo 
+
+		.logo-link
+			display: block
+			margin-bottom: 55px
+			transition: 0.6s
+
+		.logo-link:hover
+			opacity: 0.6	
+
+		.about
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 14px
+			line-height: 20px
+			color: #101326
+
+	.footer-links
+
+		.footer-links-nav
+			display: flex
+
+			li 
+				a 
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 14px
+					line-height: 20px
+					color: #101326
+					transition: 0.6s
+					padding-right: 26px				
+
+				a:hover 
+					opacity: 0.6	
+
+			li:last-child
+
+				a
+					padding-right: 0	
+
+		.processing-policy, .public-offer
+			display: block
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 14px
+			line-height: 20p
+			color: #101326
+			transition: 0.6s
+
+		.processing-policy:hover, .public-offer:hover
+			opacity: 0.6
+
+		.processing-policy 
+			margin-top: 58px	
+			margin-bottom: 10px
+
+	.social-link
+		display: flex
+		position: relative
+		top: -7px
+
+		li 
+			font-size: 0px
+			margin-right: 8px
+
+			a 
+				display: inline-block
+				transition: 0.6s
+
+			a:hover 
+				opacity: 0.6	
+
+		li:last-child
+			margin-right: 0
+
+	.telefone
+		display: inline-block
+		a
+			display: inline-block
+			position: relative
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 18px
+			line-height: 24px
+			color: #101326
+			padding-left: 56px
+
+		a:before
+			content: ""
+			display: block
+			position: absolute
+			background: url(../img/footer-telefone.svg) no-repeat center
+			background-size: cover
+			width: 40px
+			height: 40px					
+			top: -7px
+			left: 0px	
+
+
+
+/*      Blog page         */
+
+body.blog	
+	background-color: #f8f8f8
+
+.main-blog-wrapper	
+	max-width: 1168px
+	margin: 0 auto
+
+
+/*      Blog page - Header        */
+
+
+.blog-header-wrapper
+	background-color: #F8F8F8
+	border-bottom: 1px solid #CCD4E0
+
+header.blog-header
+	max-width: 1600px
+	margin: 0 auto
+	box-sizing: border-box
+	font-family: Gilroy
+	position: relative
+	display: flex
+	min-height: 106px
+
+	.blog-nav-wrapper
+		background-color: transparent
+		position: fixed
+		top: 0
+		left: 0
+		margin: 0 auto
+		width: 100%
+		z-index: 10
+		transition: 0.6s
+	
+	.main-nav
+		position: relative
+		margin: 0 auto
+		width: 100%
+		box-sizing: border-box
+		max-width: 1600px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 95px
+		min-height: 106px
+		z-index: 10
+		transition: 0.6s
+
+		.logo
+			display: block
+			background: url(../img/logo-fixed.svg) no-repeat center
+			background-size: cover
+			width: 126px
+			height: 16px
+			transition: 0.6s
+
+		.logo:hover
+			opacity: 0.7	
+
+		.links-nav
+	
+			li 
+				display: inline-block
+				margin-right: 24px
+
+				a 
+					display: inline-block
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 16px
+					color: #101326
+					letter-spacing: 0.05em
+					text-transform: uppercase
+					padding-bottom: 4px
+					transition: 0.6s
+
+				a:before 
+					content: ""
+					display: block
+					background-color: #101326	
+					height: 4px
+					position: relative
+					bottom: 41px
+					transition: 0.6s
+					opacity: 0
+
+				a:hover:before	
+					display: block
+					opacity: 1
+
+			
+			li:last-child
+				margin-right: 0
+
+		.telefone
+			position: relative
+
+			a
+				display: block
+				padding-left: 60px
+				position: relative
+				font-style: normal
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				transition: 0.6s
+				color: #101326
+
+		.telefone
+
+			a:before	
+				content: ""
+				display: block
+				width: 40px
+				height: 40px
+				background: url(../img/telefone-icon-fixed.svg) no-repeat center
+				background-size: cover
+				position: absolute
+				left: 4px
+				bottom: -8px
+
+		.links-nav-mobile
+			display: none
+			
+			.hamburger-icon-container 
+				position: relative
+				cursor: pointer
+				width: 32px
+				height: 16px
+			
+			.hamburger-icon 
+				transform: translateY(-50%)
+			
+			.hamburger-icon,
+			.hamburger-icon:before,
+			.hamburger-icon:after 
+				content: ''
+				position: absolute
+				height: 3px
+				width: 100%
+				background: #000
+				transition: all .2s ease
+
+			.hamburger-icon:after 
+				width: 50%				
+			
+			.hamburger-icon 
+				top: 50%
+			
+
+			.hamburger-icon:before 
+				top: -200%
+			
+			.hamburger-icon:after 
+				top: 200%			
+
+			.hamburger-active .hamburger-icon 
+				transform: rotate(45deg) translate(-3px,-3px)			
+
+			.hamburger-active .hamburger-icon:before,
+			.hamburger-active .hamburger-icon:after 
+				top: 0
+			
+			.hamburger-active .hamburger-icon:before 
+				transform: rotate(90deg)
+			
+
+	.blog-nav-wrapper.scroll-nav
+		background-color: #fff
+
+		.main-nav			
+			min-height: 62px
+			
+			.links-nav
+		
+				li 
+
+					a:before 					
+						bottom: 19px
+
+
+/*      Blog page - Blog Title       */	
+
+
+.blog-title	
+	padding-top: 45px
+	padding-bottom: 29px
+
+	h1 
+		font-family: TacticSansExd-Med
+		font-style: normal
+		font-weight: normal
+		font-size: 52px
+		line-height: 56px
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #101326
+		margin-bottom: 14px
+
+	h4 
+		font-family: Gilroy
+		font-style: normal
+		font-weight: 500
+		font-size: 26px
+		line-height: 32px
+		color: #101326
+		margin-top: 0
+
+
+/*      Blog page - Blog Posts      */	
+
+
+.blog-posts		
+
+	.post	
+
+		.post-link
+			display: flex 
+			justify-content: space-between
+			border-bottom: 1px solid #CCD4E0
+			padding-bottom: 64px
+			padding-top: 64px
+
+			.image-wrapper 
+				border-radius: 16px
+				margin-right: 34px
+				min-width: 688px
+
+				img
+					display: block 
+					width: 100% 
+					height: auto
+
+			.post-content
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+
+				.post-content-wrapper				
+
+					.data
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 14px
+						line-height: 16px
+						letter-spacing: 0.05em
+						text-transform: uppercase
+						color: #B19459
+
+					.title
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 36px
+						line-height: 40px
+						color: #101326
+						margin-top: 30px
+						margin-bottom: 23px
+						transition: 0.6s
+
+					.about
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 500
+						font-size: 26px
+						line-height: 32px
+						color: #898B97
+						margin-bottom: 25px
+
+				.button-read
+					display: inline-block			
+					box-sizing: border-box
+					font-family: TacticSansExd-Med
+					font-style: normal
+					font-weight: normal
+					font-size: 14px
+					line-height: 16px
+					text-align: center
+					letter-spacing: 0.1em
+					text-transform: uppercase
+					color: #101326
+					border: 1px solid #101326
+					border-radius: 4px
+					width: 329px
+					padding: 24px 15px
+					background-color: transparent
+					opacity: 0
+					transition: 0.6s
+
+				.button-read:hover
+					background-color: #101326	
+					color: #fff
+
+		.post-link:hover
+
+			.post-content
+
+				.post-content-wrapper
+
+					.title 
+						color: #B19459
+
+				.button-read
+					opacity: 1	
+
+
+/*      Blog page - button-more	      */
+
+.button-more
+	cursor: pointer
+	font-family: TacticSansExd-Med
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 16px
+	text-align: center
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	color: #101326
+	display: block
+	max-width: 448px
+	box-sizing: border-box
+	border: 1px solid #101326
+	border-radius: 4px
+	margin: 0 auto	
+	margin-top: 64px
+	margin-bottom: 128px
+	padding: 23px 16px
+	transition: 0.6s
+
+.button-more:hover	
+	background-color: #101326
+	color: #f8f8f8
+
+
+
+/*      blog-2 page	      */
+
+.blog-2-header-wrapper
+	background: url(../img/header-background.jpg) no-repeat center
+	background-size: cover
+	position: relative		
+
+	.main-header
+
+		.title
+			text-align: center
+
+			.data
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 14px
+				line-height: 16px
+				letter-spacing: 0.05em
+				text-transform: uppercase
+				color: #B19459
+
+			h1 
+				font-family: TacticSansExd-Med
+				font-style: normal
+				font-weight: normal
+				font-size: 52px
+				line-height: 56px
+				letter-spacing: 0.02em
+				text-transform: uppercase
+				color: #FFFFFF
+				max-width: 1168px
+				margin: 0 auto
+				margin-top: 32px
+				padding-bottom: 77px
+				position: relative
+
+			h1:before	
+				content: ""
+				display: block
+				width: 12px
+				height: 12px
+				background-color: #b19459
+				transform: rotate(45deg)
+				position: absolute
+				left: 50%
+				bottom: 31px
+				margin-left: -6px
+
+			.adout-rules	
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 36px
+				line-height: 40px
+				color: #FFFFFF
+				max-width: 928px
+				margin: 0 auto
+
+		.icon-links
+			display: flex
+			justify-content: center		
+
+
+.blog-2-wrapper	
+
+	.blog-content
+		padding-top: 127px	
+		padding-bottom: 95px	
+
+		p 
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			color: #101326
+			max-width: 928px
+			margin: 0 auto
+			margin-bottom: 32px
+
+		p.strong 
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 36px
+			line-height: 40px
+			color: #101326
+			margin-bottom: 63px	
+
+		p.main-idea
+			position: relative
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 36px
+			line-height: 40px
+			text-align: center
+			color: #101326
+			border-top: 1px solid #B19459
+			border-bottom: 1px solid #B19459
+			padding-top: 69px
+			padding-bottom: 65px
+			margin-top: 72px
+			margin-bottom: 60px
+
+			.romb-wrapper
+				position: absolute
+				display: block
+				width: 66px
+				height: 20px
+				background-color: #F8F8F8 
+				top: -10px 
+				left: 50% 
+				transform: translateX(-50%)
+				font-size: 0
+				line-height: 0
+
+				.romb
+					display: inline-block
+					position: relative
+					width: 12px
+					height: 12px
+					background-color: #b19459
+					transform: rotate(45deg)
+					top: 4px
+
+		p.mobile-content
+			display: none
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 26px
+			line-height: 32px
+			text-align: center
+			color: #101326
+			border-bottom: 1px solid #CCD4E0
+
+		.image-wrapper
+			margin-top: 81px
+			margin-bottom: 80px
+
+			img 
+				display: block
+				width: 100% 
+				height: auto
+
+		.about-images 
+			display: flex
+			max-width: 928px
+			margin: 0 auto	
+			margin-top: 79px
+			margin-bottom: 76px
+
+			img 
+				display: block
+				width: 100% 
+				height: auto
+				border-radius: 16px	
+
+			.left-image 
+				margin-right: 32px	
+
+			.right-image		
+				display: flex
+				flex-direction: column 
+				justify-content: space-between
+
+.other-articles-wrapper		
+	background-color: #efeeee
+	border-top: 1px solid #CCD4E0
+
+	.other-articles 
+		max-width: 1600px
+		margin: 0 auto
+		padding-top: 81px	
+		padding-bottom: 127px	
+		padding-left: 96px
+		padding-right: 96px
+
+		h3
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 30px
+			line-height: 32px
+			text-transform: uppercase
+			color: #101326
+			margin-bottom: 48px
+
+		.arcticles
+			display: flex   
+			justify-content: space-between
+
+			.arcticle-item
+				max-width: 448px
+				display: block
+				position: relative
+				transition: 0.6s
+
+				img 
+					display: block 
+					width: 100%
+					height: auto 
+					border-radius: 16px
+
+				.content-wrap
+
+					.data
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 14px
+						line-height: 16px
+						letter-spacing: 0.05em
+						text-transform: uppercase
+						color: #B19459
+						margin-top: 18px
+						margin-bottom: 6px
+
+					.name 
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 26px
+						line-height: 32px
+						color: #101326
+						margin-bottom: 15px
+
+					.about
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 500
+						font-size: 18px
+						line-height: 24px
+						color: #898B97
+
+			.arcticle-item:hover 
+				transform: scale(1.05)
+
+
+/*      Gallery page	      */
+
+.gallery-title
+	max-width: 1170px
+	margin: 0 auto
+	padding-top: 43px
+	padding-bottom: 108px
+
+	h1 
+		font-family: TacticSansExd-Med
+		font-style: normal
+		font-weight: normal
+		font-size: 52px
+		line-height: 56px
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #101326
+		margin-bottom: 14px
+
+	.about
+		font-family: Gilroy
+		font-style: normal
+		font-weight: 500
+		font-size: 26px
+		line-height: 32px
+		color: #101326
+
+
+.gallery-tabs
+
+	.gallery-tabs-buttons 
+		display: flex
+		justify-content: center
+
+		li 
+			margin-right: 24px
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.05em
+			text-transform: uppercase
+			color: #101326
+			padding-bottom: 20px
+			padding-top: 20px
+			cursor: pointer		
+			border-bottom: 4px solid transparent
+			transition: 0.3s	
+
+		li.last
+			margin-right: 0	
+
+		li.active 
+			border-bottom: 4px solid #101326	
+
+	.tab-content
+		background-color: #EFEEEE
+		padding-top: 80px
+		padding-bottom: 92px
+		padding-left: 96px
+		padding-right: 96px
+
+		.grid 
+			max-width: 1408px
+			margin: 0 auto
+
+			.grid-item	
+				width: 448px
+				margin-bottom: 32px
+
+				img 
+					display: inline-block
+					width: 100% 
+					height: auto	
+					border-radius: 16px
+
+
+
+/*     Privacy page	      */
+
+.privacy-main
+	max-width: 1168px
+	margin: 0 auto
+	padding-top: 56px
+	padding-bottom: 98px
+
+	h2	
+		font-family: TacticSansExd-Med
+		font-style: normal
+		font-weight: normal
+		font-size: 40px
+		line-height: 40px
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #101326
+		margin-bottom: 77px
+
+	.content-wrapper
+		max-width: 928px
+		margin: 0 auto
+
+		p 
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			color: #101326
+			margin-bottom: 31px
+
+		h3 
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 30px
+			line-height: 32px
+			text-transform: uppercase
+			color: #101326
+			margin-top: 65px
+			margin-bottom: 46px
+
+		h4	
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 600
+			font-size: 26px
+			line-height: 32px
+			color: #101326
+			margin-top: 64px
+
+		.list 
+			margin-bottom: 62px
+			padding-left: 45px
+			list-style-type: decimal
+
+			li
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 500
+				font-size: 26px
+				line-height: 32px
+				color: #101326
+				margin-bottom: 23px
+				position: relative
+
+		.list.list-style-image	
+			list-style-type: none
+			list-style-image: 
+
+		.list.list-style-image
+
+			li:before
+				content:  "—"
+				position: absolute
+				left: -45px
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце	
+
+
+	
