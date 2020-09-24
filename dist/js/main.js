@@ -168,6 +168,48 @@ $(function() {
 	// WOW animation
 
 	new WOW().init();
+
+
+	$(document).ready(function(){ 
+		$('.grid').masonry({
+	// указываем элемент-контейнер в котором расположены блоки для динамической верстки
+		  itemSelector: '.grid-item',
+	// указываем класс элемента являющегося блоком в нашей сетке
+			  singleMode: true,
+	// true - если у вас все блоки одинаковой ширины
+		  isResizable: true,
+	// перестраивает блоки при изменении размеров окна
+		  isAnimated: true,
+	// анимируем перестроение блоков
+			  animationOptions: { 
+			  queue: false, 
+			  duration: 500 
+		  },
+	// опции анимации - очередь и продолжительность анимации
+		gutter: 32
+	// Adds horizontal space between item elements	
+		}); 
+	});
+
+
+
+	// popup for .address section
+
+
+	$('.open-address-map-popup').click(function(event) { // Вызываем функцию по нажатию на кнопку
+		event.preventDefault();
+		$('.address-popup').show(300); // Открываем окно
+		$('.address-overlay-popup').show(300); // Открываем блок заднего фона
+	})
+	$('.address-overlay-popup').click(function() { // Обрабатываем клик по заднему фону
+		$('.address-popup').hide(300); // Скрываем затемнённый задний фон и основное всплывающее окно
+		$('.address-overlay-popup').hide(300); 
+	})
+
+	$('.address-popup .popup-close').click(function() { 
+		$('.address-popup').hide(300); 
+		$('.address-overlay-popup').hide(300); 
+	})
 	
 
 

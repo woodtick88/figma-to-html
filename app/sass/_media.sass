@@ -11,6 +11,13 @@
 			.grid
 				max-width: 1026px
 
+	.main-gallery-wrappe
+
+		.main-gallery	
+
+			.grid
+				max-width: 1026px			
+
 
 @media only screen and (max-width : 1580px)	
 
@@ -44,6 +51,8 @@
 						.name
 							margin-bottom: 8px	
 
+	
+
 
 @media only screen and (max-width : 1500px)	
 
@@ -54,11 +63,86 @@
 		.buy-form	
 			left: 46px
 
+	.product-cart-small	
+		max-width: 768px
+		flex-direction: column
+
+		.product-image
+			max-width: 100%
+			height: 536px
+
+			.dekstop 
+				display: none
+			
+			.tablet 
+				display: block
+
+		.about-product
+			max-width: 100%
+			box-sizing: border-box	
+			margin-right: 0	
+			padding-left: 40px
+			padding-right: 40px
+			padding-top: 64px
+			padding-bottom: 48px
+
+			.title
+				text-align: center
+
+			.info
+				text-align: center	
+
+			.buy 
+				margin-top: 49px		
+
+
 
 @media only screen and (max-width : 1440px)	
 
 	.mobile-application:before
 		right: 56px		
+
+	.address-popup
+		height: auto
+
+		.content-wrapper
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			min-height: auto
+			
+			.about-address-popup
+				max-width: 100%
+				width: 100%
+				flex-direction: row
+				justify-content: space-between
+
+				.address
+					width: 48%
+					min-height: auto
+
+					.title
+						max-width: 240px
+						padding-top: 57px
+
+					.address-list
+						max-width: 240px	
+
+				.image-wrapper
+					min-height: 384px
+					width: 52%				
+
+			.address-map
+				margin-left: 0	
+				margin-top: -62px				
+
+				img 
+					width: 100% 
+					height: auto	
+
+		.popup-close
+			top: 16px
+			right: 16px
 
 @media only screen and (max-width : 1399px)	
 
@@ -99,6 +183,13 @@
 	.privacy-main	
 		padding-left: 40px
 		padding-right: 40px
+
+	.main-gallery-wrappe
+
+		.main-gallery
+
+			.title 
+				padding-left: 40px	
 		
 
 
@@ -170,6 +261,26 @@
 
 			.footer-links-nav
 				margin-bottom: 41px	
+
+	.characteristic-wrap
+
+		.characteristic
+			padding-left: 40px
+			padding-right: 40px
+			padding-top: 79px
+			padding-bottom: 79px
+
+			.characteristic-list
+
+				.item
+
+					.name
+						box-sizing: border-box
+						max-width: 48%
+						padding-right: 70px
+
+					.about 	
+						width: 52%
 
 
 @media only screen and (max-width : 1199px)
@@ -249,6 +360,23 @@
 					width: 328px
 					margin-bottom: 32px
 
+	.main-gallery-wrappe
+
+		.main-gallery	
+			padding-top: 83px
+			padding-bottom: 45px
+
+			.grid 
+				max-width: 688px
+				margin: 0 auto
+
+				.grid-item	
+					width: 328px
+					margin-bottom: 32px	
+
+
+
+
 @media only screen and (max-width : 1008px)	
 
 	.blog-2-wrapper
@@ -264,7 +392,6 @@
 			.about-images
 				padding-left: 40px
 				padding-right: 40px	
-
 
 
 
@@ -472,6 +599,113 @@
 
 					img 	
 						border-radius: 8px
+
+	.main-gallery-wrappe
+
+		.main-gallery 
+			padding-top: 31px
+			padding-bottom: 14px
+
+			.title
+				padding-left: 24px
+				font-size: 22px
+				line-height: 28px
+				margin-bottom: 28px
+			
+			.grid 
+				max-width: 100%
+				box-sizing: border-box
+				padding-left: 24px
+				padding-right: 24px
+
+				.grid-item	
+					width: calc(100% - 48px)
+					margin-bottom: 16px	
+
+					img 	
+						border-radius: 8px			
+
+
+	.characteristic-wrap		
+
+		.characteristic
+			padding-left: 24px
+			padding-right: 24px
+			padding-top: 32px
+			padding-bottom: 79px
+
+			.title
+				font-size: 22px
+				line-height: 28px
+				padding-bottom: 27px
+
+			.characteristic-list
+				
+				.item
+					flex-direction: column
+					padding-top: 22px
+					padding-bottom: 24px
+
+					.name
+						box-sizing: border-box
+						max-width: 100%
+						padding-right: 0
+						font-size: 18px
+						line-height: 24px
+						margin-bottom: 6px
+
+					.about 	
+						width: 100%
+						font-size: 18px
+						line-height: 24px
+
+	.product-cart-small	
+
+		.product-image
+			max-width: 100%
+			height: auto
+
+			img 
+				display: block 
+				width: 100% 
+				height: auto
+
+		.about-product
+			max-width: 100%
+			box-sizing: border-box	
+			margin-right: 0	
+			padding-left: 24px
+			padding-right: 24px
+			padding-top: 32px
+			padding-bottom: 15px
+
+			.title
+				font-size: 22px
+				line-height: 28px
+				margin-bottom: 31px
+
+			.info
+				font-size: 18px
+				line-height: 24px
+
+			.buy 
+				margin-top: 31px
+				padding-bottom: 21px
+				padding-top: 21px					
+
+				.price	
+					font-size: 40px
+					line-height: 40px
+
+				.buy-link
+					padding-left: 31px
+
+					.mobile 
+						display: none
+
+				.buy-link:before
+					bottom: -18px		
+
 
 
 @media only screen and (max-width : 750px)
@@ -756,8 +990,7 @@
 				.adout-rules
 					display: none	
 
-
-
+	
 
 @media only screen and (max-width : 690px)	
 
@@ -1152,8 +1385,54 @@
 				margin-bottom: 30px
 
 
-	
+	.address-popup		
 
+		.content-wrapper
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: flex-start
+			align-items: stretch
+			height: 100vh
+			
+			.about-address-popup
+				justify-content: flex-start
+				max-height: 216px
+
+				.address
+					width: 100%					
+					box-sizing: border-box
+					align-items: flex-start
+					padding-left: 24px
+					padding-right: 24px
+
+					.title
+						width: 224px
+						padding-top: 36px
+						margin-bottom: 20px
+						font-size: 20px
+						line-height: 24px						
+
+					.address-list
+						font-size: 16px
+						line-height: 20px
+						width: 224px	
+
+				.image-wrapper
+					display: none			
+
+			.address-map
+				margin-top: -140px
+
+				img 
+					height: 100%			
+	
+		.popup-close
+			top: 8px
+			right: 8px
+
+
+	
+	
 
 
 /* Extra Small Devices, Phones */
@@ -1269,6 +1548,17 @@
 			padding-left: 24px	
 			min-width: 430px
 			overflow-x: auto
+
+
+
+@media only screen and (max-width : 400px)
+
+	.address-popup		
+
+		.content-wrapper
+
+			.address-map
+				margin-top: -80px					
 			
 
 @media only screen and (max-width : 370px)

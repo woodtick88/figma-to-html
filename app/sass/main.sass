@@ -536,10 +536,154 @@ header.main-header
 		li:hover
 			transform: scale(1.1)
 
+
+
+/*       characteristic             */	
+
+	
+.characteristic-wrap	
+	background-color: #EFEEEE
+
+	.characteristic
+		box-sizing: border-box
+		max-width: 1198px
+		margin: 0 auto
+		padding-left: 15px
+		padding-right: 15px
+		padding-top: 126px
+		padding-bottom: 127px
+
+		.title
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			text-align: center
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #101326
+			margin: 0
+			padding-bottom: 61px
+
+		.characteristic-list
+
+			.item
+				border-bottom: 1px solid #CCD4E0
+				display: flex
+				justify-content: space-between
+				padding-top: 31px
+				padding-bottom: 30px
+
+				.name
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 26px
+					line-height: 32px
+					color: #898B97
+					width: 568px
+
+					.prompt
+						display: inline-block
+						width: 16px
+						height: 16px
+						background-color: #898B97
+						border-radius: 50%
+						position: relative
+						margin-left: 2px
+						top: 1px
+						cursor: pointer
+						transition: 0.6s
+
+						img 
+							position: absolute
+							top: 50%
+							left: 50%
+							transform: translateY(-50%) translateX(-50%)
+
+						.promt-about
+							display: none
+							font-family: Gilroy
+							font-style: normal
+							font-weight: 500
+							font-size: 13px
+							line-height: 16px
+							color: #FFFFFF
+							box-sizing: border-box 
+							padding: 16px
+							width: 232px
+							background-color: #363A53
+							border-radius: 4px
+							position: absolute
+							left: 0
+							bottom: 24px
+
+					.prompt:hover 
+						background-color: #363A53
+
+						.promt-about
+							display: inline-block
+
+
+
+
+				.about 
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 26px
+					line-height: 32px
+					color: #101326
+					width: 568px
+
+
+			.item:first-child
+				border-top: 1px solid #CCD4E0	
+
+	
+/*       main-gallery            */	
+
+.main-gallery-wrappe
+	background-color: #363A53
+
+	.main-gallery	
+		max-width: 1408px
+		margin: 0 auto
+		padding-top: 124px
+		padding-bottom: 92px
+
+		.title 
+			margin: 0
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #FFFFFF
+			margin-bottom: 64px
+
+		.grid 
+
+			.grid-item	
+				width: 448px
+				margin-bottom: 32px
+
+				img 
+					display: inline-block
+					width: 100% 
+					height: auto	
+					border-radius: 16px
+
+
+	
 /*       accessories             */	
 
 .accessories-wrap	
-	background-color: #EFEEEE	
+	background-color: #363a53
+	border-top: 1px solid rgba(255, 255, 255, 0.2)
 
 .accessories
 	padding-left: 96px
@@ -557,7 +701,7 @@ header.main-header
 		line-height: 40px
 		letter-spacing: 0.02em
 		text-transform: uppercase
-		color: #101326
+		color: #FFFFFF
 		padding-bottom: 23px
 
 	.custom-slick-arrows 
@@ -571,13 +715,14 @@ header.main-header
 			cursor: pointer
 			width: 72px
 			height: 72px
-			background-color: #ffffff
+			background-color: #363a53
+			border: 1px solid rgba(255, 255, 255, 0.1)
 			border-radius: 50%
 			transition: 0.6s
 
 			.wrapper
 				height: 100%
-				background: url(../img/slick-arrow.svg) no-repeat center
+				background: url(../img/slick-arrow-white.svg) no-repeat center
 
 			img 
 				display: inline-block
@@ -631,7 +776,7 @@ header.main-header
 				font-weight: 500
 				font-size: 18px
 				line-height: 24px
-				color: #101326
+				color: #FFFFFF
 				margin-top: 16px
 				margin-bottom: 3px
 
@@ -641,7 +786,7 @@ header.main-header
 				font-weight: 600
 				font-size: 36px
 				line-height: 40px
-				color: #101326
+				color: #FFFFFF
 
 		
 		.accessories-item:focus 
@@ -2133,6 +2278,455 @@ header.blog-header
 
 
 
+/*     address popup      */
+
+.address-overlay-popup
+	display: none
+	position: fixed
+	z-index: 999
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	background: #2E324A
+
+.address-popup
+	display: none
+	position: fixed
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 1000
+	width: 100%	
+	max-width: 1600px
+	margin: 0 auto
+
+	.content-wrapper
+		min-height: 100vh
+		display: flex
+
+		.about-address-popup
+			max-width: 664px
+			z-index: 6
+			display: flex
+			flex-direction: column
+
+			.address
+				max-width: 576px
+				min-height: 50%
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: center
+				
+				.title
+					font-family: TacticSansExd-Med
+					font-style: normal
+					font-weight: normal
+					font-size: 30px
+					line-height: 32px
+					text-transform: uppercase
+					color: #B19459
+					max-width: 328px
+					margin: 0 
+					margin-bottom: 17px
+					padding-top: 114px
+
+				.address-list	
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 18px
+					line-height: 24px
+					color: #FFFFFF
+					max-width: 328px
+					padding-bottom: 10px
+
+					li 
+						margin-bottom: 3px
+
+			.image-wrapper
+				min-height: 50%
+				background: url(../img/popup/address-popup.jpg) center no-repeat
+				background-size: cover
+				width: 684px
+
+				img 
+					display: block 
+					width: 100%
+					height: 100%	
+
+		.address-map
+			z-index: 5
+			margin-left: -86px
+
+			img 
+				display: block 
+				width: 100% 
+				height: 100%	
+
+
+	.popup-close
+		position: absolute
+		top: 32px
+		right: 32px
+		display: flex 
+		justify-content: center
+		align-items: center
+		width: 64px
+		height: 64px
+		border-radius: 50%
+		background-color: rgba(16, 19, 38, 0.5)
+		cursor: pointer
+		transition: 0.6s
+		z-index: 7
+
+	.popup-close:hover 
+		transform: scale(1.1)
+
+
+
+/*     .product-cart-small section     */
+
+.product-cart-small-wrapper	
+	background-color: #F8F8F8
+
+.product-cart-small	
+	max-width: 1600px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+
+	.product-image
+		max-width: 784px
+		height: 792px		
+
+		img 
+			display: block 
+			width: 100% 
+			height: auto
+
+		.tablet
+			display: none	
+
+	.about-product	
+		max-width: 568px
+		padding-top: 119px
+		margin-right: 95px
+
+		.title	
+			margin: 0
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #B19459
+			margin-bottom: 47px
+
+		.info	
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			color: #101326
+
+		.buy	
+			border-top: 1px solid #101326
+			margin-top: 79px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-top: 28px
+			padding-bottom: 28px			
+
+			.price
+				display: inline-block
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 72px
+				line-height: 72px
+				color: #101326
+
+			.buy-link	
+				display: inline-block
+				position: relative
+				font-family: TacticSansExd-Med
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 32px
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				color: #101326
+				padding-left: 48px
+				transition: 0.6s				
+
+			.buy-link:before
+				content: ""
+				display: block
+				position: absolute
+				width: 32px
+				height: 32px
+				background: url(../img/product-cart-small/buy-link-icon.svg) center no-repeat
+				left: 0	
+
+			.buy-link:hover
+				opacity: 0.7	
+
+			.buy-link:hover:before
+				opacity: 0.7		
+
+
+/*     .basket section     */
+
+
+.purchase-wrapper.basket
+	background-color: #EFEEEE
+
+	.purchase
+		max-width: 1248px
+		padding-left: 40px
+		padding-left: 40px
+		box-sizing: border-bor
+		outline: 1px solid red
+		flex-direction: column
+		padding-top: 89px
+
+		.basket-title
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 52px
+			line-height: 56px
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #101326
+			margin: 0
+			margin-bottom: 14px
+
+		.about-basket-title	
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			color: #101326
+
+		.parameter
+			margin-left: 0 
+			width: 100%
+			padding-top: 95px
+
+			.main-product-information
+				padding: 7px 0
+				display: flex
+				justify-content: space-between
+				align-items: center
+				border-top: 1px solid #ccd4e0
+				border-bottom: 1px solid #B19459
+
+				.item-info			
+
+					.item-name
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 500
+						font-size: 18px
+						line-height: 24px
+						color: #101326
+						display: inline-block
+						position: relative
+						padding-left: 78px
+
+						.item-image
+							display: block						    
+							width: 64px
+							hegiht: 48px
+							border-radius: 4px
+							position: absolute
+							top: 50%
+							left: 0
+							transform: translateY(-50%)
+
+				.price
+					position: relative
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 26px
+					line-height: 32px
+					color: #101326
+					padding-right: 40px
+
+				.price:before	
+					content: ""
+					display: block
+					position: absolute
+					background: url(../img/basket/basket-trash-icon.svg) center no-repeat
+					background-size: cover
+					width: 16px
+					height: 16px
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					margin-top: -1px
+
+				.parameter-colors
+					border-top: none
+					border-bottom: none
+					margin-bottom: 0
+					min-width: 346px
+
+					.selectric-wrapper
+						padding-left: 64px
+
+						.selectric 
+							padding-top: 0
+							padding-bottom: 0
+
+							b.button:after
+								margin-top: -18px
+
+							span.label
+								padding-right: 48px
+								margin-right: 0
+							
+								
+
+					.select-image 
+
+						.modelImg 
+							width: 48px
+							height: 48px
+
+							img 
+								width: 48px
+								height: 48px
+
+			.accessories-select 
+
+				li:first-child 
+					border-top: none
+				
+				li 
+					label 
+
+						.item-price	
+							padding-right: 45px
+
+							.basket-trash-icon
+								display: block 
+								width: 16px
+								height: 16px
+								position: absolute
+								right: 0
+								top: 50% 
+								transform: translateY(-50%)
+								margin-top: -2px
+
+						.curren-price
+							display: inline-block
+							min-width: 100px
+							text-align: right		
+
+						.price-select	
+							display: inline-block
+							position: relative							
+							padding: 0 61px
+							margin-right: 57px
+
+							.minus
+								display: inline-block 
+								position: absolute
+								left: 0
+								top: 50%
+								transform: translateY(-50%)
+								width: 32px
+								height: 32px
+								background: url(../img/basket/minus.svg) center no-repeat
+								background-size: cover
+								line-height: 32px
+
+							.plus
+								isplay: inline-block 
+								position: absolute
+								right: 0
+								top: 50%
+								transform: translateY(-50%)
+								width: 32px
+								height: 32px
+								background: url(../img/basket/plus.svg) center no-repeat
+								background-size: cover
+								line-height: 32px
+
+
+		.total-price
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-bottom: 2px solid #101326
+			padding-top: 29px
+			padding-bottom: 24px
+
+			.title
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 36px
+				line-height: 40px
+				color: #101326	
+
+			.total
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 72px
+				line-height: 72px
+				color: #101326	
+
+		.basket-form			
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 14px
+			line-height: 20px
+			color: #898B97
+			padding-top: 79px
+
+			.basket-form-row
+				display: flex
+				justify-content: space-between
+				margin-bottom: 18px
+
+				.title
+					margin-bottom: 2px
+
+				.basket-form-label
+					width: 50% 
+					box-sizing: border-box
+
+				.first 
+					padding-right: 16px	
+
+				.second 
+					padding-left: 16px		
+
+				.basket-form-input
+					display: block
+					background-color: transparent
+					border: 1px solid #898B97
+					box-sizing: border-box
+					border-radius: 4px
+					width: 100%
+					font-size: 18px
+					line-height: 24px
+					padding: 15px 16px
+					
 
 
 
