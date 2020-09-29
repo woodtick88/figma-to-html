@@ -123,51 +123,239 @@
 
                         <!-- Изображение при смене селекта -->
     
-                        <label for="#parameter-colors-select" class="select-image">
+                        <label for="#parameter-colors-select-1" class="select-image colors-select-image-1">
     
-                            <div class="modelImg visible" id="image-select-1"> <!-- id идентефикатор нужного изображения выбраного в селекте  -->
+                            <div class="modelImg visible" id="image-select-11"> <!-- id идентефикатор нужного изображения выбраного в селекте  -->
                                 <img  src="./img//parameter-colors-select-1.png" alt="select image" />							
                             </div>
     
-                            <div class="modelImg"  id="image-select-2">
+                            <div class="modelImg"  id="image-select-12">
                                 <img src="./img/accessories-select-item-2.png" alt="select image" />
                             </div>
     
-                            <div class="modelImg"  id="image-select-3">
+                            <div class="modelImg"  id="image-select-13">
                                 <img src="./img/accessories-select-item-3.png" alt="select image" />
                             </div>
     
-                            <div class="modelImg"  id="image-select-4">
+                            <div class="modelImg"  id="image-select-14">
                                 <img src="./img/accessories-select-item-4.png" alt="select image" />
                             </div>
     
                         </label>				
                         
     
-                        <select id="parameter-colors-select">
-                            <option value="strawberries" data="#image-select-1">
+                        <select id="parameter-colors-select-1" class="parameter-colors-select">
+                            <option value="strawberries" data="#image-select-11">
                                 Карельская берёза 
                                 Сталь
                             </option>
-                            <option value="mango" data="#image-select-2">
+                            <option value="mango" data="#image-select-12">
                                 Mango
                             </option>
-                            <option value="strawberries"  data="#image-select-3">
+                            <option value="strawberries"  data="#image-select-13">
                                 Strawberries
                             </option>
-                            <option value="mango"  data="#image-select-4">
+                            <option value="mango"  data="#image-select-14">
                                 Mango
                             </option>
                         </select>
                         
-                    </div>
+					</div>
+					
+					
 
                     <div class="price">
                         40 000 ₽
                     </div>
 
-                </div>
+				</div>						
 				
+				<ul class="accessories-select">
+
+					<li>
+						<input type="checkbox" id="accessory-item-2" class="accessories-checbox" hidden data-price="2500" autocomplete="off">
+						<label for="accessory-item-2">							
+							<span class="item-name">	
+								<img src="./img/accessories-select-item-2.png" class="accessories-item-image" alt="accessories item logo">						
+								Эспандер 208-22 (10-30 кг)
+							</span>
+							<span class="item-price">
+
+                                <span class="price-select">
+                                    <span class="minus">
+
+                                    </span>
+                                    <span class="curren-number">
+                                        1
+                                    </span>
+                                    <span class="plus">
+
+                                    </span>
+                                </span>
+
+                                <span class="curren-price">
+                                    2 500 ₽
+                                </span>
+                                <span class="basket-trash-icon">
+                                    <img src="./img/basket/basket-trash-icon.svg" alt="basket trash icon">
+                                </span>
+							</span>
+						</label>						
+					</li>
+
+					<li>
+						<input type="checkbox" id="accessory-item-3"  class="accessories-checbox" hidden data-price="500" autocomplete="off">
+						<label for="accessory-item-3">							
+							<span class="item-name">	
+								<img src="./img/accessories-select-item-3.png" class="accessories-item-image" alt="accessories item logo">						
+								Расширитель хвата (шар)
+							</span>
+							<span class="item-price">
+
+                                <span class="price-select">
+                                    <span class="minus">
+
+                                    </span>
+                                    <span class="curren-number">
+                                        1
+                                    </span>
+                                    <span class="plus">
+                                        
+                                    </span>
+                                </span>
+                                <span class="curren-price">
+                                    500 ₽
+                                </span>
+                                <span class="basket-trash-icon">
+                                    <img src="./img/basket/basket-trash-icon.svg" alt="basket trash icon">
+                                </span>
+							</span>
+						</label>						
+					</li>
+
+					<li>
+						<input type="checkbox" id="accessory-item-4" class="accessories-checbox" hidden data-price="3000" autocomplete="off">
+						<label for="accessory-item-4">							
+							<span class="item-name">	
+								<img src="./img/accessories-select-item-4.png" class="accessories-item-image" alt="accessories item logo">		
+								Бицепс-изолятор
+							</span>
+							<span class="item-price">
+
+                                <span class="price-select">
+                                    <span class="minus">
+
+                                    </span>
+                                    <span class="curren-number">
+                                        1
+                                    </span>
+                                    <span class="plus">
+                                        
+                                    </span>
+                                </span>
+
+                                <span class="curren-price">
+                                  3 500 ₽
+                                </span>
+                                <span class="basket-trash-icon">
+                                    <img src="./img/basket/basket-trash-icon.svg" alt="basket trash icon">
+                                </span>
+							</span>
+						</label>						
+					</li>
+
+					<li>
+						<input type="checkbox" id="accessory-item-5" class="accessories-checbox" hidden data-price="2500" autocomplete="off">
+						<label for="accessory-item-5">							
+							<span class="item-name">	
+								<img src="./img/accessories-select-item-5.png" class="accessories-item-image" alt="accessories item logo">						
+								Эспандер Orange Heavy
+							</span>
+							<span class="item-price">
+
+                                <span class="price-select">
+                                    <span class="minus">
+
+                                    </span>
+                                    <span class="curren-number">
+                                        1
+                                    </span>
+                                    <span class="plus">
+                                        
+                                    </span>
+                                </span>
+
+                                <span class="curren-price">
+                                   2 500 ₽
+                                </span>
+                                <span class="basket-trash-icon">
+                                    <img src="./img/basket/basket-trash-icon.svg" alt="basket trash icon">
+                                </span>
+							</span>
+						</label>						
+					</li>					
+
+				</ul>
+				
+				<div class="main-product-information">
+
+                    <div class="item-info">
+                        <span class="item-name">	
+                            <img src="./img/basket/basket-item-1.png" class="item-image" alt="basket logo">						
+                            Desire Eco
+                        </span>
+                    </div>
+
+                    <div class="parameter-colors">	
+
+                        <!-- Изображение при смене селекта -->
+    
+                        <label for="#parameter-colors-select-2" class="select-image colors-select-image-2">
+    
+                            <div class="modelImg visible" id="image-select-21"> <!-- id идентефикатор нужного изображения выбраного в селекте  -->
+                                <img  src="./img//parameter-colors-select-1.png" alt="select image" />							
+                            </div>
+    
+                            <div class="modelImg"  id="image-select-22">
+                                <img src="./img/accessories-select-item-2.png" alt="select image" />
+                            </div>
+    
+                            <div class="modelImg"  id="image-select-23">
+                                <img src="./img/accessories-select-item-3.png" alt="select image" />
+                            </div>
+    
+                            <div class="modelImg"  id="image-select-24">
+                                <img src="./img/accessories-select-item-4.png" alt="select image" />
+                            </div>
+    
+                        </label>				
+                        
+    
+                        <select id="parameter-colors-select-2" class="parameter-colors-select">
+                            <option value="strawberries" data="#image-select-21">
+                                Карельская берёза 
+                                Сталь
+                            </option>
+                            <option value="mango" data="#image-select-22">
+                                Mango
+                            </option>
+                            <option value="strawberries"  data="#image-select-23">
+                                Strawberries
+                            </option>
+                            <option value="mango"  data="#image-select-24">
+                                Mango
+                            </option>
+                        </select>
+                        
+					</div>
+					
+					
+
+                    <div class="price">
+                        40 000 ₽
+                    </div>
+
+				</div>						
 				
 				<ul class="accessories-select">
 
@@ -373,6 +561,7 @@
                 </form>
 
 			</div>
+
 
 		</section>
 
