@@ -2544,7 +2544,7 @@ header.blog-header
 		.parameter
 			margin-left: 0 
 			width: 100%
-			padding-top: 95px
+			padding-top: 95px				
 
 			.main-product-information
 				padding: 7px 0
@@ -2587,18 +2587,18 @@ header.blog-header
 					color: #101326
 					padding-right: 40px
 
-				.price:before	
-					content: ""
-					display: block
-					position: absolute
-					background: url(../img/basket/basket-trash-icon.svg) center no-repeat
-					background-size: cover
-					width: 16px
-					height: 16px
-					right: 0
-					top: 50%
-					transform: translateY(-50%)
-					margin-top: -1px
+					.delete-item	
+						display: block
+						position: absolute
+						width: 16px
+						height: 16px
+						right: 0
+						top: 50%
+						transform: translateY(-50%)
+						margin-top: -1px
+						font-size: 0
+						line-height: 0
+						cursor: pointer
 
 				.parameter-colors
 					border-top: none
@@ -2688,6 +2688,11 @@ header.blog-header
 								background-size: cover
 								line-height: 32px
 
+							.curren-number
+								display: inline-block
+								min-width: 18px
+								text-align: center	
+
 
 		.total-price
 			display: flex
@@ -2751,6 +2756,9 @@ header.blog-header
 					line-height: 24px
 					padding: 15px 16px
 
+				.basket-form-input.error 
+					border-color: red	
+
 			.comments
 				font-family: Gilroy
 				font-style: normal
@@ -2793,6 +2801,38 @@ header.blog-header
 				min-width: 328px
 				margin-top: 64px
 
+	.basket-empty
+		display: none
+
+		.title
+			min-height: 60vh
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+
+			h3
+				margin: 0
+				font-family: TacticSansExd-Med
+				font-style: normal
+				font-weight: 400
+				font-size: 40px
+				line-height: 40px
+				letter-spacing: .02em
+				text-transform: uppercase
+				color: #101326
+				margin-bottom: 20px
+				text-align: center
+
+			.to-buy
+				font-family: Gilroy
+				font-style: normal
+				font-weight: 600
+				font-size: 18px
+				line-height: 24px
+				color: #101326
+				padding-top: 14px
+				padding-bottom: 10px	
 
 
 
