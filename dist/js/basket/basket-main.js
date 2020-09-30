@@ -209,8 +209,7 @@ $(function() {
 	// валидация полей формы
 
 
-	$('.purchase-wrapper.basket .purchase .basket-form').submit(function(e) {
-		e.preventDefault();
+	$('.purchase-wrapper.basket .purchase .basket-form').submit(function(e) {		
 
 		let name = $('.basket-form-input.name').val();
 		let email = $('.basket-form-input.email').val();
@@ -227,14 +226,20 @@ $(function() {
 		let regExTelefone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 		let validTelefone = regExTelefone.test(telefone);
 
-		console.log(!validEmail, !validTelefone)
-
-		if (!validEmail && !validTelefone) {
+		if ( !validEmail && !validTelefone ) {
 		
 				$('.basket-form-input.email').addClass('error');
 			
 				$('.basket-form-input.telefone').addClass('error');
 
+		}
+
+		if (  ( !validEmail && !validTelefone ) || name.length < 6 ) {	
+
+			e.preventDefault();	
+			
+		} else {
+			
 		}
 
 
