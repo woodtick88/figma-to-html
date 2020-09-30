@@ -211,10 +211,8 @@ $(function() {
 
 	$('.purchase-wrapper.basket .purchase .basket-form').submit(function(e) {
 		e.preventDefault();
-		console.log(2)
 
 		let name = $('.basket-form-input.name').val();
-		let city = $('.basket-form-input.city').val();
 		let email = $('.basket-form-input.email').val();
 		let telefone = $('.basket-form-input.telefone').val();
 
@@ -223,28 +221,26 @@ $(function() {
 		if (name.length < 6) {
 			$('.basket-form-input.name').addClass('error');
 		}
-		if (city.length < 1) {
-			$('.basket-form-input.city').addClass('error');
+
+		let regExEmail = /^[a-z]+@[a-z]+\.[a-z]{2,6}$/i;
+		let validEmail = regExEmail.test(email);
+		let regExTelefone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+		let validTelefone = regExTelefone.test(telefone);
+
+		console.log(!validEmail, !validTelefone)
+
+		if (!validEmail && !validTelefone) {
+		
+				$('.basket-form-input.email').addClass('error');
+			
+				$('.basket-form-input.telefone').addClass('error');
+
 		}
-		if (email.length < 1) {
-		  $('.basket-form-input.email').addClass('error');
-		} else {
-		  let regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/;
-		  let validEmail = regEx.test(email);
-		  if (!validEmail) {
-			$('.basket-form-input.email').addClass('error');
-		  }
-		}
-		if (telefone.length < 1) {
-			$('.basket-form-input.telefone').addClass('error');
-		  } else {
-			let regEx = /^([+]?[0-9\s-\(\)]{3,25})*$/i;
-			let validTelefone = regEx.test(telefone);
-			if (!validTelefone) {
-			  $('.basket-form-input.telefone').addClass('error');
-			}
-		  }
+
+
 	  });
+
+
 
 
 		
