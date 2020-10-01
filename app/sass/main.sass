@@ -47,6 +47,7 @@ body
 	background-color: #F8F8F8
 	padding: 0
 	margin: 0
+	word-wrap: break-word
 
 .img-responsive
 	display: block
@@ -2899,6 +2900,251 @@ header.blog-header
 
 		.link:hover
 			transform: scale(1.05)
+
+
+/*       Catalog page           */	
+
+
+.catalog-background-wrapper
+	background: none
+	position: relative
+
+	.background-image
+		display: block
+		width: 100%
+		height: 100vh
+		position: sticky
+		top: 0
+		left: 0
+		background: url(../img/header-background.jpg) center no-repeat
+		background-size: cover
+		margin-top: -100vh
+
+	.blog-2-header-wrapper
+		background: none
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2)	
+		position: relative
+
+		.main-header
+			min-height: auto			
+			padding-bottom: 128px
+
+			.title
+				padding-top: 29px
+
+				h1 
+					max-width: 768px
+					padding-bottom: 16px
+
+				h1:before 
+					display: none	
+
+				.adout-rules
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 26px
+					line-height: 32px
+					color: #B19459
+					max-width: 768px
+
+	.simulators-wrapper	
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2)		
+		position: relative
+
+	.simulators-wrapper.bottom
+		border-bottom: none
+
+	.simulators
+		max-width: 1600px
+		margin: 0 auto
+		padding-top: 128px	
+		padding-left: 96px
+		padding-right: 96px	
+		padding-bottom: 82px
+
+		.title
+			margin: 0 auto
+			position: relative
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			text-align: center
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #FFFFFF
+			padding-bottom: 110px
+			max-width: 1200px
+
+		.title:before
+			content: ""
+			display: block
+			width: 12px
+			height: 12px
+			background-color: #b19459
+			transform: rotate(45deg)
+			position: absolute
+			left: 50%
+			bottom: 48px
+			margin-left: -6px
+
+		.about
+			margin: 0 auto
+			font-family: Gilroy
+			font-style: normal
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			text-align: center
+			color: #FFFFFF
+			max-width: 928px
+			padding-bottom: 48px
+
+		.products	
+			display: flex 
+			justify-content: space-between
+			flex-wrap: wrap
+
+			.product-item
+				width: 50%
+				box-sizing: border-box
+				margin-bottom: 45px
+				position: relative
+
+				.item-image
+					display: block
+					width: 100%
+					height: auto
+					border-radius: 16px
+
+				.item-title
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 26px
+					line-height: 32px
+					color: #FFFFFF
+					margin-top: 23px
+					margin-bottom: 16px
+
+				.item-description	
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 18px
+					line-height: 24px
+					color: #898B97
+
+				.item-price	
+					display: flex
+					justify-content: space-between
+					margin-top: 22px
+
+					.total-price
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 600
+						font-size: 36px
+						line-height: 40px
+						color: #FFFFFF
+
+					.colors 
+						
+						.color
+							display: inline-block 
+							width: 40px
+							height: 40px
+							margin-left: 4px
+
+				.icon-new
+					position: absolute
+					width: 72px
+					height: 72px
+					top: 16px
+					right: 32px
+
+
+			.product-item.left
+				padding-right: 16px
+
+			.product-item.right
+				padding-left: 16px	
+
+
+.catalog-accessories-wrapper
+	background-color: #363A53
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+	.catalog-accessories
+		max-width: 1600px
+		margin: 0 auto
+		padding-left: 96px
+		padding-right: 96px	
+		padding-top: 125px
+		padding-bottom: 78px
+
+		.title
+			margin: 0
+			font-family: TacticSansExd-Med
+			font-style: normal
+			font-weight: normal
+			font-size: 40px
+			line-height: 40px
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #FFFFFF
+			margin-bottom: 63px
+
+		.catalog-accessories-list
+			display: flex
+			flex-wrap: wrap 
+			justify-content: flex-start
+
+			.item 
+				display: block
+				position: relative
+				max-width: 448px
+				margin-right: 32px
+				margin-bottom: 39px
+
+				.item-image
+					display: block
+					width: 100%
+					height: auto
+					border-radius: 16px
+
+				.name
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 500
+					font-size: 18px
+					line-height: 24px
+					color: #FFFFFF	
+					margin-top: 13px
+
+				.price	
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 36px
+					line-height: 40px
+					color: #FFFFFF
+
+				.icon-new
+					position: absolute
+					width: 72px
+					height: 72px
+					top: 16px
+					right: 16px	
+
+			.item:nth-child(3n)		
+				margin-right: 0
+
+.catalog-accessories-wrapper.bottom
+	border-bottom: none
+	
 
 
 
