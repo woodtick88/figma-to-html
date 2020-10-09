@@ -153,6 +153,12 @@ $(function() {
 
 	}
 
+
+
+	// WOW animation
+
+	new WOW().init();
+
 	
 
 
