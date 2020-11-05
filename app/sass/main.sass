@@ -119,10 +119,11 @@ header.main-header
 				li 
 
 					.inner-nav
-						display: flex
+						display: flex	
 
-					a.active-inner-menu-link
-						color: #B19459		
+					a.active-inner-menu-link.main-link:before	
+						display: block
+						opacity: 1	
 
 
 	.main-nav-wrapper.active-menu:before 
@@ -195,12 +196,6 @@ header.main-header
 					display: block
 					opacity: 1
 
-				a.main-link.active-inner-menu-link:before 
-					display: none	
-
-				a.main-link.active-inner-menu-link:hover
-					color: #B19459
-
 				.inner-nav
 					position: absolute
 					left: 0px
@@ -235,14 +230,15 @@ header.main-header
 							font-family: TacticSansExd-Med
 							font-style: normal
 							font-weight: normal
-							font-size: 14px
+							font-size: 13px
 							line-height: 16px
 							letter-spacing: 0.1em
 							text-transform: uppercase
 							color: #B19459
 							margin-top: 48px
-							margin-bottom: 32px	
+							margin-bottom: 17px	
 							min-height: 36px
+							text-align: left
 
 						.inner--nav-list-links	
 
@@ -396,21 +392,16 @@ header.main-header
 				li 
 
 					a 
-						color: #fff
-
-					a:hover 
-						color: #B19459	
+						color: #fff	
 
 					a:before 
-						background-color: #101326	
+						background-color: #fff	
 						bottom: 19px
 
 					.inner-nav
 						padding-top: 48px	
 						top: 43px
-
-					a.active-inner-menu-link
-						color: #B19459		
+	
 						
 
 			.telefone
@@ -3764,8 +3755,9 @@ header.blog-header
 					a.main-link							
 						color: #fff	
 
-					a.main-link.active-inner-menu-link
-						color: #B19459
+					a.main-link:before
+						background-color: #fff	
+
 
 			.telefone 
 
