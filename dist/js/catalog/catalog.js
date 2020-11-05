@@ -113,6 +113,37 @@ $(function() {
 	}
 
 
+	// active menu - catalog
+
+
+	$('header.main-header .main-nav .links-nav li.active-inner-menu').mouseover(function() {
+
+		$('header.main-header .main-nav-wrapper').addClass('active-menu');
+
+		// active menu - height block
+
+		let blockHeight1 = $('header.main-header .main-nav-wrapper').innerHeight();
+		let blockHeight2 = $('header.main-header .main-nav .links-nav li .inner-nav').innerHeight();
+
+		$('header.main-header .main-nav-wrapper').innerHeight(blockHeight1 + blockHeight2);
+	});
+
+	$('header.main-header .main-nav .links-nav li.active-inner-menu').mouseout(function() {
+
+		$('header.main-header .main-nav-wrapper').removeClass('active-menu');
+
+		$('header.main-header .main-nav-wrapper').css({'height' : 'auto'})
+
+	});
+
+
+	$('header.main-header .main-nav .links-nav li .inner-nav').mouseover(function() {
+
+		$('header.main-header .main-nav-wrapper').addClass('active-menu');
+
+	});
+
+
 
 
 
