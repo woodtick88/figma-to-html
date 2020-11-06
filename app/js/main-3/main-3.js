@@ -179,23 +179,9 @@ $(function() {
 
 	}
 
-
-
-	 // tabs on page gallery
-
-
-	 $(".tab_item").not(":first").fadeOut();
-	 $(".gallery-tabs-buttons .tab").click(function() {
-		 $(".gallery-tabs-buttons .tab").removeClass("active").eq($(this).index()).addClass("active");
-		 $(".tab_item").fadeOut(200).eq($(this).index()).fadeIn()
-	 }).eq(0).addClass("active"); 
-
-
-
-
 	// slider 
 
-	$('.tab-slider').slick({
+	let slickMain3 = $('.tab-slider').slick({
 		dots: true,
 		infinite: true,
 		speed: 300,
@@ -209,6 +195,17 @@ $(function() {
 			}
 		]
 	});
+
+	 // tabs on page gallery
+
+
+	 $(".tab_item").not(":first").fadeOut();
+	 $(".gallery-tabs-buttons .tab").click(function() {
+		 $(".gallery-tabs-buttons .tab").removeClass("active").eq($(this).index()).addClass("active");
+		 $(".tab_item").fadeOut(200).eq($(this).index()).fadeIn()	
+		 slickMain3.slick('refresh');	
+		
+	 }).eq(0).addClass("active"); 
 
 
 
