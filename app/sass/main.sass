@@ -2947,6 +2947,190 @@ header.blog-header
 				min-width: 328px
 				margin-top: 64px
 
+			.basket-form-options
+				margin-bottom: 48px
+
+				.basket-form-options-title
+					font-family: Gilroy
+					font-style: normal
+					font-weight: 600
+					font-size: 26px
+					line-height: 32px
+					color: #101326
+					margin: 0
+
+				.input-list
+					margin: 0 
+					padding: 0
+					padding-top: 32px
+					display: flex
+					justify-content: flex-start
+					border-bottom: 1px solid #CCD4E0
+					padding-bottom: 48px
+
+					.input-list-item
+						margin-right: 40px
+						display: flex 
+						justify-content: flex-start
+						align-items: center
+
+						.option-input	
+							cursor: pointer	
+							display: flex 
+							justify-content: flex-start
+							align-items: center						
+
+							.method
+								font-family: Gilroy
+								font-style: normal
+								font-weight: 500
+								font-size: 18px
+								line-height: 24px
+								color: #101326
+								display: inline-block
+								position: relative
+								padding-left: 48px								
+
+							.method:before 
+								content: ""
+								display: block 
+								position: absolute
+								width: 32px 
+								height: 32px
+								box-sizing: border-box	
+								background-color: #fff
+								border: 8px solid #fff
+								border-radius: 50%
+								left: 0
+								top: 50% 
+								transform: translateY(-50%)
+
+							input[type="radio"]:checked + .method:before
+								border: 8px solid #363A53
+
+							.delivery-terms	
+								display: inline-block 
+								position: relative
+								font-family: Gilroy
+								font-style: normal
+								font-weight: 500
+								font-size: 18px
+								line-height: 24px
+								color: #B19459
+								cursor: pointer
+								margin-left: 16px
+								transition: 0.2s
+
+								.description
+									display: none
+									position: absolute
+									bottom: 40px 
+									left: 0 
+									background: #363A53
+									border-radius: 4px
+									box-sizing: border-box
+									padding: 16px
+									min-width: 232px
+
+									.description-text	
+										font-family: Gilroy
+										font-style: normal
+										font-weight: 500
+										font-size: 13px
+										line-height: 16px
+										color: #FFFFFF
+
+									.description-text.border
+										margin-top: 8px
+										margin-bottom: 8px
+										padding-bottom: 8px
+										border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+									.description-text.bottom	
+										margin-bottom: 8px
+
+									.description-text.bold
+										font-family: Gilroy
+										font-style: normal
+										font-weight: 600	
+
+							.delivery-terms.delivery-terms-active
+								color: #363A53
+
+							.option-input-select-wrapper
+								display: inline-block
+								margin-left: 16px
+								
+								.selectric 	
+									border: none	
+									background-color: #fff 							
+									
+									.label
+										font-family: Gilroy
+										font-style: normal
+										font-weight: 500
+										font-size: 18px
+										line-height: 24px
+										color: #101326
+										background-color: #fff 
+										margin-left: 0 
+										margin-right: 0
+										display: flex 
+										align-items: center
+										padding-left: 16px		 
+										padding-bottom: 16px
+										padding-top: 16px
+										margin-right: 48px
+										height: 56px
+										box-sizing: border-box
+										max-width: 470px
+
+									.button
+										width: 16px
+										height: 16px
+										background: url(../img/basket/option-input-select-icon.svg)	center no-repeat												
+										line-height: 0
+										background-color: transparent
+										right: 18px
+										top: 21px
+										transition: 0.6s
+
+									.button:after 
+										display: none	
+
+								.selectric-open	
+
+									.selectric 
+
+										.button
+											transform: rotate(180deg)
+										
+								.selectric-items
+									
+									li
+										font-family: Gilroy
+										font-style: normal
+										font-weight: 500
+										font-size: 18px
+										line-height: 24px
+										color: #101326	
+										display: flex 
+										align-items: center
+										padding-left: 16px 
+										padding-right: 48px 
+
+									
+			
+
+
+
+					.input-list-item:last-child 
+						margin-right: 0
+
+				.input-list.bottom
+					padding-bottom: 32px
+					padding-top: 16px
+
 	.basket-empty
 		display: none
 

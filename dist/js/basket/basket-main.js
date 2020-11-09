@@ -297,7 +297,23 @@ $(function() {
 
 	}
 
+	// customize dropbox(select) in block .basket-form
 
+	$('.basket-form .option-input-select').selectric({
+		disableOnMobile: false,
+		nativeOnMobile: false
+	  });
+
+
+	// decription delivery
+
+	$('.input-list-item .option-input .delivery-terms').click(function() {
+
+		$(this).toggleClass('delivery-terms-active');
+
+		$('.input-list-item .option-input .delivery-terms .description').slideToggle(300);
+
+	});
 		
 
 
