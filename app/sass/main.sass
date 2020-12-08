@@ -2549,15 +2549,58 @@ header.blog-header
 
 	.product-image
 		max-width: 784px
-		height: 792px		
+		min-height: 792px
+		padding-bottom: 32px	
+		
+		.show
+			width: 784px
+			height: 784px	
 
-		img 
-			display: block 
-			width: 100% 
+		.small-img 
+			width: 100%
 			height: auto
+			margin-top: 10px
+			position: relative
+			left: 0
+			box-sizing: border-box 
+			padding-left: 30px
+			padding-right: 30px
 
-		.tablet
-			display: none	
+			.icon-left
+				width: 12px
+				height: 24px
+				cursor: pointer
+				position: absolute
+				top: 0
+				bottom: 0
+				margin: auto 0
+				left: 0
+
+			.icon-right
+				width: 12px
+				height: 24px
+				cursor: pointer
+				position: absolute
+				top: 0
+				bottom: 0
+				margin: auto 0
+				right: 0	
+		
+			.small-container 
+				width: 100%
+				height: auto
+				position: relative
+				overflow-x: auto
+
+				.show-small-img 
+					width: 100px
+					height: 100px	
+
+				div
+					width: 100% 
+					display: flex			
+
+			
 
 	.about-product	
 		max-width: 568px
@@ -2630,6 +2673,9 @@ header.blog-header
 
 			.buy-link:hover:before
 				opacity: 0.7		
+
+
+
 
 .address-background.cart-small
 	background-color: #EFEEEE

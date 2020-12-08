@@ -24,6 +24,7 @@
 
 <body class="blog">	
 
+
 	<div class="mobile-nav" id="mobile-nav">
 
 		<div class="mobile-nav-head">
@@ -243,9 +244,27 @@
 
 				<div class="product-image">
 
-					<img src="./img/product-cart-small/product-cart.jpg" class="dekstop" alt="product image">
+					<!-- Изображения должны быть квадратными -->
 
-					<img src="./img/product-cart-small/product-cart-tablet.jpg" class="tablet" alt="product image">
+					<div class="show" href="./img/product-cart-small/1.jpg">
+						<img src="./img/product-cart-small/1.jpg" id="show-img">
+					  </div>
+				 
+					  <!-- Secondary carousel image thumbnail gallery -->
+				 
+					  <div class="small-img">
+					   <img src="./img/product-cart-small/next-icon.png" class="icon-left" alt="" id="prev-img">
+						<div class="small-container">
+						 <div id="small-img-roll">
+						   <img src="./img/product-cart-small/1.jpg" class="show-small-img" alt="">
+						   <img src="./img/product-cart-small/2.jpg" class="show-small-img" alt="">
+						   <img src="./img/product-cart-small/1.jpg" class="show-small-img" alt="">
+						   <img src="./img/product-cart-small/2.jpg" class="show-small-img" alt="">
+						 </div>
+						</div>
+					   <img src="./img/product-cart-small/next-icon.png" class="icon-right" alt="" id="next-img">
+					   
+					  </div>		
 
 				</div>
 		
@@ -580,9 +599,18 @@
 
 	</div>
 
+
+
+
+	
+
+	
+
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>	
+	<script src="js/product-cart-small/zoom-image.js"></script>
+	<script src="js/product-cart-small/zoom-carousel.js"></script>	
     <script src="js/product-cart-small/product-cart-small.js"></script>
 
 </body>
