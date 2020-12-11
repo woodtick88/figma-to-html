@@ -130,9 +130,35 @@ $(function() {
 
 		});
 
-
-
 	}
+
+
+
+
+
+
+
+
+
+
+	var urls = [
+		"./img/product-cart-small/test/1.jpg",
+		"./img/product-cart-small/test/2.jpg",
+		"./img/product-cart-small/test/3.jpg",
+		"./img/product-cart-small/test/4.jpg",
+		"./img/product-cart-small/test/5.jpg"
+	  ];
+	  var options = {
+		//thumbLeft:true,
+		//thumbRight:true,
+		//thumbHide:true,
+		//width:300,
+		//height:500,
+	  };
+	  $("#el").zoomy(urls, options);
+
+
+
 
 
 
