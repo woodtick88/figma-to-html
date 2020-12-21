@@ -147,6 +147,37 @@ $(function() {
 	}
 
 
+	// active menu - catalog
+
+
+	$('header.blog-header .main-nav .links-nav li.active-inner-menu').mouseover(function() {
+
+		$('header.blog-header .blog-nav-wrapper').addClass('active-menu');
+
+		// active menu - height block
+
+		let blockHeight1 = $('header.blog-header .blog-nav-wrapper').innerHeight();
+		let blockHeight2 = $('header.blog-header .main-nav .links-nav li .inner-nav').innerHeight();
+
+		$('header.blog-header .blog-nav-wrapper').innerHeight(blockHeight1 + blockHeight2);
+	});
+
+	$('header.blog-header .main-nav .links-nav li.active-inner-menu').mouseout(function() {
+
+		$('header.blog-header .blog-nav-wrapper').removeClass('active-menu');
+
+		$('header.blog-header .blog-nav-wrapper').css({'height' : 'auto'})
+
+	});
+
+
+	$('header.blog-header .main-nav .links-nav li .inner-nav').mouseover(function() {
+
+		$('header.blog-header .mblog-nav-wrapper').addClass('active-menu');
+
+	});
+
+
 
 
 

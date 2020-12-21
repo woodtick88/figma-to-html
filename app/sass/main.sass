@@ -209,7 +209,6 @@ header.main-header
 					padding-bottom: 64px
 					padding-left: 95px
 					padding-right: 95px
-					
 
 					li 
 						margin-right: 0
@@ -1721,6 +1720,56 @@ header.blog-header
 		width: 100%
 		z-index: 10
 		transition: 0.6s
+
+	.blog-nav-wrapper.active-menu
+		background-color: #101326 
+
+		.main-nav
+
+			.logo
+				background: url(../img/logo.svg) no-repeat center
+
+			.links-nav
+
+				li 
+
+					a.main-link 
+						color: #fff
+
+					.inner-nav
+						display: flex	
+
+					a.active-inner-menu-link.main-link:before	
+						display: bl	
+
+			.telefone
+
+				a
+					color: #FFFFFF
+
+	.blog-nav-wrapper.scroll-nav.active-menu
+  		background-color: #101326
+
+
+	.blog-nav-wrapper.active-menu:before 
+		content: ""
+		display: block 
+		position: absolute
+		left: 0 
+		top: 105px
+		width: 100% 
+		height: 1px	
+		background-color: rgba(255, 255, 255, 0.1)
+		z-index: 12	
+
+		.main-nav	
+
+			.links-nav
+
+				li
+
+					a 
+						color: #fff			
 	
 	.main-nav
 		position: relative
@@ -1753,7 +1802,7 @@ header.blog-header
 				display: inline-block
 				margin-right: 24px
 
-				a 
+				a.main-link 
 					display: inline-block
 					font-family: Gilroy
 					font-style: normal
@@ -1766,7 +1815,7 @@ header.blog-header
 					padding-bottom: 4px
 					transition: 0.6s
 
-				a:before 
+				a.main-link:before 
 					content: ""
 					display: block
 					background-color: #101326	
@@ -1776,9 +1825,74 @@ header.blog-header
 					transition: 0.6s
 					opacity: 0
 
-				a:hover:before	
+				a.main-link:hover:before	
 					display: block
 					opacity: 1
+
+				
+				.inner-nav
+					position: absolute
+					left: 0px
+					top: 60px	
+					background-color: #101326
+					display: none
+					justify-content: space-between					
+					box-sizing: border-box
+					width: 100%
+					padding-top: 93px
+					padding-bottom: 64px
+					padding-left: 95px
+					padding-right: 95px
+					
+
+					li 
+						margin-right: 0
+						width: 100%
+
+					.inner-nav-list
+						max-width: 328px 
+
+						.product-image
+
+							img 
+								display: block 
+								max-width: 328px 
+								height: auto
+								border-radius: 16px
+
+						.title	
+							font-family: TacticSansExd-Med
+							font-style: normal
+							font-weight: normal
+							font-size: 13px
+							line-height: 16px
+							letter-spacing: 0.1em
+							text-transform: uppercase
+							color: #B19459
+							margin-top: 48px
+							margin-bottom: 17px	
+							min-height: 36px
+							text-align: left
+
+						.inner--nav-list-links	
+
+							li 
+								display: block
+								a 
+									display: block
+									font-family: Gilroy
+									font-style: normal
+									font-weight: 500
+									font-size: 18px
+									line-height: 24px
+									color: #FFFFFF
+									transition: 0.6s 
+									padding-bottom: 16px
+
+								a:hover 
+									color: #B19459
+
+	
 
 			
 			li:last-child
