@@ -2549,57 +2549,45 @@ header.blog-header
 
 	.product-image
 		max-width: 784px
-		min-height: 792px
 		padding-bottom: 32px	
 		
-		.show
-			width: 784px
-			height: 784px	
+		.gallery-slider
 
-		.small-img 
-			width: 100%
-			height: auto
-			margin-top: 10px
-			position: relative
-			left: 0
-			box-sizing: border-box 
-			padding-left: 30px
-			padding-right: 30px
+			.gallery-slider-item
+				height: 100%
 
-			.icon-left
-				width: 12px
-				height: 24px
-				cursor: pointer
-				position: absolute
-				top: 0
-				bottom: 0
-				margin: auto 0
-				left: 0
-
-			.icon-right
-				width: 12px
-				height: 24px
-				cursor: pointer
-				position: absolute
-				top: 0
-				bottom: 0
-				margin: auto 0
-				right: 0	
-		
-			.small-container 
-				width: 100%
-				height: auto
-				position: relative
-				overflow-x: auto
-
-				.show-small-img 
-					width: 100px
-					height: 100px	
-
-				div
+				img 
+					display: block 
 					width: 100% 
-					display: flex			
+					height: auto	
 
+			.slick-track
+				display: flex !important
+
+			.slick-slide
+				height: inherit !important				
+
+		.gallery-slider-custom-dots
+			margin-top: 32px
+			display: flex 
+			flex-wrap: wrap
+
+			.custom-dots-item
+				display: inline-block 
+				width: 100px
+				height: 100px 
+				border: 1px solid transparent
+				border-radius: 8px
+				transition: 0.3s
+
+				img 
+					display: inline-block 
+					width: 100%
+					height: 100%
+					border-radius: 8px	
+
+			.custom-dots-item.current-custon-dot
+				border: 1px solid #363a53
 	.product-image-2		
 
 		.zoom 

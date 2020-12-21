@@ -133,8 +133,65 @@ $(function() {
 	}
 
 
+	// images gallery
 
 
+	const gallerySlider = $('.gallery-slider');
+
+	gallerySlider.slick({
+		arrows: false
+	});
+
+	// изменение высоты слайдера в зависимости от высоты текущего изображения
+	
+	gallerySlider.on('setPosition', function (event, slick) {
+
+		const currentSlideHeight = $('.gallery-slider .gallery-slider-item.slick-current img').height();
+		$('.gallery-slider .slick-list.draggable').animate({ 'height': currentSlideHeight + 'px' }, 400);
+		//$('.gallery-slider .slick-list.draggable').css({ 'height': currentSlideHeight + 'px' })
+
+
+	});;
+
+	$(".gallery-slider-custom-dots .custom-dots-item").click(function(e){		
+				
+		$(".gallery-slider-custom-dots .custom-dots-item").each(function() {
+
+			$(this).removeClass("current-custon-dot");
+
+		});
+
+		$(this).addClass("current-custon-dot");		
+
+		e.preventDefault();
+		slideIndex = $(this).index();
+		gallerySlider.slick( 'slickGoTo', parseInt(slideIndex) );
+
+	});
+
+	// привязка dots к слайдеру
+
+	gallerySlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+		$(".gallery-slider-custom-dots .custom-dots-item").each(function() {
+
+			console.log($(this).index())
+
+			if ( currentSlide == $(this).index() ) {
+				$(this).addClass("current-custon-dot");
+			} else {
+				$(this).removeClass("current-custon-dot");
+			}
+
+		});	
+		
+	});
+
+
+	// подключение zoom к слайдеру
+
+
+	$('.gallery-slider-item').zoom();
 
 
 
