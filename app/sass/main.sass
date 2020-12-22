@@ -2800,14 +2800,101 @@ header.blog-header
 			.buy-link:hover:before
 				opacity: 0.7
 
-			.colors	
+		.parameter-colors
+			margin-bottom: 45px
+			position: relative
+			border: 1px solid #CCD4E0
+			padding-left: 20px
 
-				.color
-					display: inline-block
-					width: 40px
-					height: 40px
-					margin-left: 4px
-					cursor: pointer			
+			.select-image
+				position: absolute 
+				top: 50% 
+				left: 10px
+				z-index: 1
+				transform: translateY(-50%)
+				cursor: pointer
+
+				.modelImg
+					display: none
+					width: 64px
+					height: 64px
+
+					img 
+						width: 64px
+						height: 64px
+						border-radius: 50%
+						display: inline-block
+
+				.modelImg.visible	
+					display: block	
+
+
+			.selectric-wrapper
+				padding-left: 80px			
+
+				.selectric
+					max-width: 688px
+					box-sizing: border-box
+					padding-top: 15px
+					padding-bottom: 15px
+					border: 0px solid #ddd					
+					background-color: #F8F8F8
+					font-size: 0px
+					padding-right: 60px
+
+					span.label
+						min-height: 64px
+						display: inline-block
+						font-family: Gilroy
+						font-style: normal
+						font-weight: 500
+						font-size: 18px
+						line-height: 64px
+						color: #101326
+						margin-left: 0
+						position: relative
+						padding-right: 60px					
+
+					b.button 
+						position: relative
+						position: absolute
+						visibility: hidden
+						right: 24px
+
+					b.button:after
+						content: ""
+						display: block
+						position: absolute
+						background: url(../img/parameter-colors-select-arrow.png) no-repeat center
+						background-size: cover
+						height: 32px
+						width: 32px
+						top: 50%
+						right: -6px	
+						transform: translateY(50%)
+						visibility: visible 
+						border: 0px solid transparent
+						transition: 0.6s
+
+				.selectric-items
+
+					ul 
+						li 
+							font-family: Gilroy
+							font-style: normal
+							font-weight: 500
+							font-size: 18px
+							line-height: 24px
+							color: #101326
+
+			.selectric-wrapper.selectric-open	
+				z-index: 2
+
+				.selectric	
+
+					b.button:after	
+						transform: translateY(50%) rotate(180deg)
+		
 
 
 

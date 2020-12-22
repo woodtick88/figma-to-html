@@ -453,13 +453,7 @@
 		
 						<span class="price">
 							5 000 ₽
-						</span>
-
-						<div class="colors">
-							<img src="./img/catalog/color-1.png" alt="item color icon" class="color">
-							<img src="./img/catalog/color-2.png" alt="item color icon" class="color">
-							<img src="./img/catalog/color-3.png" alt="item color icon" class="color">
-						</div>
+						</span>						
 		
 						<a href="#" class="buy-link">
 							<span class="mobile">
@@ -467,6 +461,49 @@
 							</span>                        
 						</a>
 		
+					</div>
+
+					<div class="parameter-colors">	
+
+						<!-- Изображение при смене селекта -->
+
+						<label for="#parameter-colors-select" class="select-image">
+
+							<div class="modelImg visible" id="image-select-1"> <!-- id идентефикатор нужного изображения выбраного в селекте  -->
+								<img  src="./img//parameter-colors-select-1.png" alt="select image" />							
+							</div>
+
+							<div class="modelImg"  id="image-select-2">
+								<img src="./img/accessories-select-item-2.png" alt="select image" />
+							</div>
+
+							<div class="modelImg"  id="image-select-3">
+								<img src="./img/accessories-select-item-3.png" alt="select image" />
+							</div>
+
+							<div class="modelImg"  id="image-select-4">
+								<img src="./img/accessories-select-item-4.png" alt="select image" />
+							</div>
+
+						</label>				
+						
+
+						<select id="parameter-colors-select">
+							<option value="strawberries" data="#image-select-1">
+								Карельская берёза 
+								Сталь
+							</option>
+							<option value="mango" data="#image-select-2">
+								Mango
+							</option>
+							<option value="strawberries"  data="#image-select-3">
+								Strawberries
+							</option>
+							<option value="mango"  data="#image-select-4">
+								Mango
+							</option>
+						</select>
+						
 					</div>
 		
 				</div>
@@ -850,7 +887,8 @@
 
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>	
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="./js/jquery.selectric.min.js"></script>	
 	<script src="js/slick.min.js"></script>
 	<script src="./js/jquery.zoom.min.js"></script>
     <script src="js/main.js"></script>
