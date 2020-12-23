@@ -743,7 +743,7 @@ $(function() {
 		const gallerySlider = $('.gallery-slider');
 
 		gallerySlider.slick({
-			arrows: false
+			arrows: true
 		});
 
 		// изменение высоты слайдера в зависимости от высоты текущего изображения

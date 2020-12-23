@@ -2685,7 +2685,41 @@ header.blog-header
 				display: flex !important
 
 			.slick-slide
-				height: inherit !important				
+				height: inherit !important	
+
+			.slick-next, .slick-prev
+				font-size: 0
+				line-height: 0
+				position: absolute
+				top: 50%
+				display: block
+				width: 40px
+				height: 40px
+				padding: 0
+				transform: translate(0,-50%)
+				cursor: pointer
+				color: transparent
+				border: none
+				outline: 0
+				background: 0 0	
+				transition: 0.4s	
+				z-index: 2
+
+			.slick-next:before, .slick-prev:before
+				font-size: 40px
+				line-height: 40px
+				opacity: 1
+				color: darkgray
+
+			.slick-next 
+				right: -50px
+
+			.slick-prev 
+				left: -50px	
+
+			.slick-next:hover, .slick-prev:hover
+				transform: translate(0,-50%) scale(1.1)	
+			
 
 		.gallery-slider-custom-dots
 			margin-top: 32px
