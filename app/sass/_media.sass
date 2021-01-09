@@ -255,29 +255,21 @@
 
 	.second-main-product
 		min-height: auto
-		flex-wrap: wrap
 
 		.image-wrapper
-			width: 100%	
+			align-self: stretch
+			margin-bottom: 72px
 
 			img 
 				height: auto
 
-		.about-product	
-			width: 100%	
-			padding-right: 0
-			padding-top: 63px
-			padding-bottom: 63px	
-			justify-content: flex-start
+		.about-product						
 
 			.content-wrapper
-				max-width: 100% 
 				padding-left: 40px
-				padding-right: 40px
+				align-self: flex-start
 
 				.more
-					display: block 
-					max-width: 100%	
 
 	.second-main-product.reverse 
 
@@ -314,6 +306,34 @@
 		.parameter	
 			margin-left: 0
 	
+@media only screen and (max-width : 1279px)	
+
+	.second-main-product
+		min-height: auto
+		flex-wrap: wrap
+
+		.image-wrapper
+			width: 100%	
+			margin-bottom: 0
+
+			img 
+				height: auto
+
+		.about-product	
+			width: 100%	
+			padding-right: 0
+			padding-top: 63px
+			padding-bottom: 63px	
+			justify-content: flex-start
+
+			.content-wrapper
+				max-width: 100% 
+				padding-left: 40px
+				padding-right: 40px				
+
+				.more
+					display: block 
+					max-width: 100%	
 
 @media only screen and (max-width : 1260px)	
 
