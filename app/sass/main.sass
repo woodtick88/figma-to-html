@@ -2742,10 +2742,26 @@ header.blog-header
 				z-index: 2
 
 			.slick-next:before, .slick-prev:before
-				font-size: 40px
-				line-height: 40px
+				content: ""
+				display: block
+				font-size: 0
+				line-height: 0
 				opacity: 1
-				color: darkgray
+				color: green
+				background-color: red
+				cursor: pointer
+				width: 40px
+				height: 40px
+				background-image: url(../img/product-cart-small/product-cart-slider-icon.png)
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 65%
+				background-color: rgba(255,255,255, 0.6)
+				box-shadow: 0 1px 28px rgba(0,0,0,0.25)
+				border-radius: 50%
+
+			.slick-prev:before
+				transform: rotate(180deg)	
 
 			.slick-next 
 				right: -50px
