@@ -794,7 +794,9 @@ $(function() {
 		// подключение zoom к слайдеру
 
 
-		$('.gallery-slider-item').zoom();
+		$('.gallery-slider-item').zoom({
+			magnify: 0.75
+		});
 
 
 	 };
